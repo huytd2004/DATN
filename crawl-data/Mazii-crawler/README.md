@@ -1,0 +1,90 @@
+﻿![Python](https://img.shields.io/badge/python-3.13-blue.svg)
+![Docker](https://img.shields.io/badge/docker-ready-blue.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+
+
+# 📘 Project Cào Dữ Liệu Từ Vựng & Kanji từ Mazii
+
+Project này được thiết kế để cào dữ liệu từ vựng và kanji từ website **mazii.net** một cách hiệu quả và có hệ thống.
+
+---
+
+## ⚙️ Tính năng
+
+- Có thể cào dữ liệu đa luồng để tăng tốc độ.
+- Tự động thử lại khi kết nối thất bại.
+- Lưu trữ dữ liệu dưới định dạng ndjson, có thể dễ dàng convert về dạng json.
+- Cào dữ liệu của toàn bộ từ vựng có trong sitemap của Mazii.
+- Tự động bỏ qua các từ vựng không có data và ghi vào file error.log.
+- Hỗ trợ resume, tiến độ crawl được ghi vào save.txt, có thể dừng và chạy tiếp bất kỳ lúc nào.
+- Có sử dụng docker, thích hợp với những ai muốn sử dụng hosting server để cào liên tục.
+
+---
+
+## 📂 Cấu trúc Project
+
+- `main.py` : File thực thi chính, quản lý đa tiến trình và khởi chạy crawler.
+- `link_finder.py` : Module xử lý việc lọc link từ sitemap.
+- `crawler.py` : Module chứa logic crawl dữ liệu từ web.
+- `general.py` : Module quản lý thao tác file (tạo, đọc, ghi, log).
+- `requirements.txt` : Danh sách thư viện cần thiết để cài đặt môi trường.
+- `Dockerfile` : Định nghĩa môi trường Docker cho project.
+- `docker-compose.yml` : Cấu hình Docker Compose để chạy crawler trên server.
+
+---
+
+## 🚀 Hướng dẫn cài đặt và sử dụng
+
+1.  **Tải project về:**
+    ```bash
+    git clone https://github.com/Kuro-orzz/Mazii_crawler.git
+    cd Mazii_crawler
+    ```
+
+2.  **Cài đặt các thư viện cần thiết:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  **Cấu hình:**
+    Mở file `main.py` để chỉnh số luồng bạn muốn chạy đồng thời 
+    ```python
+    # thread_7 là để crawl kanji, còn lại là từ vựng của mazii
+    crawlers = [
+        Process(target=main, args=thread_1),
+        Process(target=main, args=thread_2),
+    #    Process(target=main, args=thread_3),
+    #    Process(target=main, args=thread_4),
+    #    Process(target=main, args=thread_5),
+    #    Process(target=main, args=thread_6),
+    #    Process(target=main, args=thread_7)
+    ]
+    # ví dụ bạn chỉ muốn chạy song song 2 luồng cùng lúc 
+    ```
+    #### Note: Chỉ nên chạy tối đa 3 luồng cùng lúc, nếu muốn nhiều hơn bạn nên vào `main.py`, ở hàm `sleep_to_avoid_ban` chỉnh time sleep lớn hơn chút để tránh bị block IP khi tạo quá nhiều request lên server trong 1 thời gian dài.
+    ```python
+    def sleep_to_avoid_ban(req_id: int):
+        time.sleep(random.uniform(0.5, 1.5))
+        if req_id % 50 == 0:
+            time.sleep(random.uniform(7, 10))
+    ```
+
+4.  **Chạy project:**
+
+    **Cách 1: Chạy trực tiếp bằng Python**
+    ```bash
+    python main.py
+    ```
+
+    **Cách 2: Dùng Docker Compose (dành cho những ai muốn sử dụng trên server)**
+    ```bash
+    docker compose up --build -d
+    ```
+
+> Kết quả sẽ được lưu dưới dạng `.ndjson` trong cùng thư mục với các file `.xml`.
+
+---
+
+## 📜 License
+
+[MIT License](./LICENSE)

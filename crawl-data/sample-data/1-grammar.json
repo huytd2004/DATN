@@ -1,0 +1,562 @@
+[
+  {
+    "entry_metadata": {
+      "entry_type": "grammar",
+      "text": "～てください",
+      "meaning_vn": "Hãy làm gì đó",
+      "jlpt_level": "N5",
+      "explanation_short": "Dùng để đưa ra lời yêu cầu hoặc nhờ vả một cách lịch sự.",
+      "tags": ["yêu cầu", "lịch sự"]
+    },
+    "dictionary_data": {
+      "formation": ["V-て + ください"],
+      "examples": [
+        {
+          "japanese_sentence": "ここに名前を書いてください。",
+          "vietnamese_sentence": "Hãy viết tên vào đây."
+        }
+      ],
+      "similar_grammar": ["～てなさい", "～てくださいませんか"]
+    },
+    "graph_knowledge": {
+      "grammatical_category": "Request",
+      "usage_constraints": ["Không dùng cho cấp trên trong những trường hợp cực kỳ trang trọng"],
+      "politeness_level": "Polite",
+      "confusable_with": [
+        {"text": "～てなさい", "reason": "Dùng cho cấp trên ra lệnh cho cấp dưới, sắc thái nặng nề hơn"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "grammar",
+      "text": "～たことがある",
+      "meaning_vn": "Đã từng làm gì đó",
+      "jlpt_level": "N5",
+      "explanation_short": "Diễn tả một trải nghiệm hoặc kinh nghiệm trong quá khứ.",
+      "tags": ["kinh nghiệm", "quá khứ"]
+    },
+    "dictionary_data": {
+      "formation": ["V-た + ことがある"],
+      "examples": [
+        {
+          "japanese_sentence": "富士山に登ったことがありますか。",
+          "vietnamese_sentence": "Bạn đã từng leo núi Phú Sĩ chưa?"
+        }
+      ],
+      "similar_grammar": ["～たばかり"]
+    },
+    "graph_knowledge": {
+      "grammatical_category": "Experience",
+      "usage_constraints": ["Thường dùng cho những việc mang tính trải nghiệm, không dùng cho hành động lặp lại hàng ngày"],
+      "politeness_level": "Neutral",
+      "confusable_with": [
+        {"text": "～た", "reason": "Quá khứ thông thường chỉ hành động đã xong, Koto ga aru nhấn mạnh vào trải nghiệm"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "grammar",
+      "text": "～なければならない",
+      "meaning_vn": "Phải làm gì đó",
+      "jlpt_level": "N4",
+      "explanation_short": "Diễn tả một nghĩa vụ hoặc sự bắt buộc phải thực hiện.",
+      "tags": ["bắt buộc", "nghĩa vụ"]
+    },
+    "dictionary_data": {
+      "formation": ["V-ない (bỏ い) + ければならない"],
+      "examples": [
+        {
+          "japanese_sentence": "薬を飲まなければなりません。",
+          "vietnamese_sentence": "Tôi phải uống thuốc."
+        }
+      ],
+      "similar_grammar": ["～なくてはいけない", "～なきゃ"]
+    },
+    "graph_knowledge": {
+      "grammatical_category": "Obligation",
+      "usage_constraints": ["Dùng trong văn viết hoặc khi nói về quy tắc chung"],
+      "politeness_level": "Formal/Neutral",
+      "confusable_with": [
+        {"text": "～なくてはいけない", "reason": "Sắc thái cá nhân hơn, mang tính khuyên bảo bản thân"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "grammar",
+      "text": "～ことができる",
+      "meaning_vn": "Có thể làm gì đó",
+      "jlpt_level": "N5",
+      "explanation_short": "Diễn tả khả năng hoặc năng lực của bản thân hoặc sự cho phép.",
+      "tags": ["khả năng", "năng lực"]
+    },
+    "dictionary_data": {
+      "formation": ["V-る + ことができる"],
+      "examples": [
+        {
+          "japanese_sentence": "私は日本語を話すことができます。",
+          "vietnamese_sentence": "Tôi có thể nói tiếng Nhật."
+        }
+      ],
+      "similar_grammar": ["Động từ thể khả năng (V-える/V-られる)"]
+    },
+    "graph_knowledge": {
+      "grammatical_category": "Potential",
+      "usage_constraints": ["Lịch sự và rõ ràng hơn so với việc chia thể khả năng trực tiếp"],
+      "politeness_level": "Neutral",
+      "confusable_with": [
+        {"text": "Động từ thể khả năng", "reason": "Thể khả năng thường dùng trong văn nói thân mật hơn"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "grammar",
+      "text": "～ほうがいい",
+      "meaning_vn": "Nên / Không nên",
+      "jlpt_level": "N4",
+      "explanation_short": "Dùng để đưa ra lời khuyên cho đối phương.",
+      "tags": ["lời khuyên"]
+    },
+    "dictionary_data": {
+      "formation": ["V-た + ほうがいい", "V-ない + ほうがいい"],
+      "examples": [
+        {
+          "japanese_sentence": "早く寝たほうがいいですよ。",
+          "vietnamese_sentence": "Bạn nên đi ngủ sớm thì tốt hơn."
+        }
+      ],
+      "similar_grammar": ["～たらどうですか"]
+    },
+    "graph_knowledge": {
+      "grammatical_category": "Advice",
+      "usage_constraints": ["Khi khuyên nên dùng thể た, khi khuyên không nên dùng thể ない"],
+      "politeness_level": "Neutral",
+      "confusable_with": [
+        {"text": "～たらどうですか", "reason": "Tara dou desu ka mang tính gợi ý nhẹ nhàng hơn, Hou ga ii mang tính áp đặt nhẹ"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "grammar",
+      "text": "～つもりだ",
+      "meaning_vn": "Dự định làm gì",
+      "jlpt_level": "N4",
+      "explanation_short": "Diễn tả một ý định hoặc kế hoạch của người nói.",
+      "tags": ["dự định", "kế hoạch"]
+    },
+    "dictionary_data": {
+      "formation": ["V-る + つもりだ", "V-ない + つもりだ"],
+      "examples": [
+        {
+          "japanese_sentence": "来年、日本へ行くつもりです。",
+          "vietnamese_sentence": "Sang năm tôi dự định sẽ đi Nhật."
+        }
+      ],
+      "similar_grammar": ["～ようと思う", "～予定だ"]
+    },
+    "graph_knowledge": {
+      "grammatical_category": "Intention",
+      "usage_constraints": ["Chỉ dùng cho bản thân người nói (hoặc hỏi trực tiếp đối phương)"],
+      "politeness_level": "Neutral",
+      "confusable_with": [
+        {"text": "～予定だ", "reason": "Yotei là kế hoạch đã được ấn định chính thức, Tsumori là ý định cá nhân"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "grammar",
+      "text": "～すぎる",
+      "meaning_vn": "Quá mức ...",
+      "jlpt_level": "N4",
+      "explanation_short": "Diễn tả một trạng thái vượt quá giới hạn cho phép, thường mang nghĩa tiêu cực.",
+      "tags": ["trạng thái", "mức độ"]
+    },
+    "dictionary_data": {
+      "formation": ["V-ます (bỏ ます) + すぎる", "A-i (bỏ い) + すぎる", "A-na (bỏ な) + すぎる"],
+      "examples": [
+        {
+          "japanese_sentence": "この料理は辛すぎます。",
+          "vietnamese_sentence": "Món ăn này cay quá mức."
+        }
+      ],
+      "similar_grammar": ["とても", "あまりに"]
+    },
+    "graph_knowledge": {
+      "grammatical_category": "Degree",
+      "usage_constraints": ["Tính từ và động từ phải bỏ đuôi tương ứng trước khi kết hợp"],
+      "politeness_level": "Neutral",
+      "confusable_with": [
+        {"text": "とても", "reason": "Totemo chỉ là 'rất', Sugiru là vượt quá ngưỡng chịu đựng"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "grammar",
+      "text": "～ながら",
+      "meaning_vn": "Vừa ... vừa ...",
+      "jlpt_level": "N4",
+      "explanation_short": "Diễn tả hai hành động được thực hiện cùng một lúc bởi một người.",
+      "tags": ["hành động", "đồng thời"]
+    },
+    "dictionary_data": {
+      "formation": ["V-ます (bỏ ます) + ながら"],
+      "examples": [
+        {
+          "japanese_sentence": "音楽を聞きながら勉強します。",
+          "vietnamese_sentence": "Tôi vừa nghe nhạc vừa học bài."
+        }
+      ],
+      "similar_grammar": ["～ついでに", "～とともに"]
+    },
+    "graph_knowledge": {
+      "grammatical_category": "Simultaneous",
+      "usage_constraints": ["Hành động ở phía sau ながら là hành động chính"],
+      "politeness_level": "Neutral",
+      "confusable_with": [
+        {"text": "～て", "reason": "Thể て cũng liệt kê hành động nhưng ながら nhấn mạnh tính đồng thời"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "grammar",
+      "text": "～はずだ",
+      "meaning_vn": "Chắc chắn là ...",
+      "jlpt_level": "N3",
+      "explanation_short": "Diễn tả một dự đoán có cơ sở chắc chắn của người nói.",
+      "tags": ["phán đoán", "chắc chắn"]
+    },
+    "dictionary_data": {
+      "formation": ["V-る + はずだ", "A-i + はずだ", "A-na + な + はずだ", "N + の + はずだ"],
+      "examples": [
+        {
+          "japanese_sentence": "彼は今日来るはずです。",
+          "vietnamese_sentence": "Anh ấy chắc chắn là sẽ đến hôm nay."
+        }
+      ],
+      "similar_grammar": ["～に違いない", "～だろう"]
+    },
+    "graph_knowledge": {
+      "grammatical_category": "Conjecture",
+      "usage_constraints": ["Dựa trên suy luận logic hoặc thông tin có sẵn"],
+      "politeness_level": "Neutral",
+      "confusable_with": [
+        {"text": "～に違いない", "reason": "Ni chigainai mang tính trực giác mạnh hơn, Hazu da dựa trên logic"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "grammar",
+      "text": "～ようだ",
+      "meaning_vn": "Dường như / Hình như",
+      "jlpt_level": "N3",
+      "explanation_short": "Diễn tả một sự phán đoán dựa trên cảm giác hoặc thông tin quan sát được.",
+      "tags": ["phán đoán", "cảm giác"]
+    },
+    "dictionary_data": {
+      "formation": ["V-る + ようだ", "A-i + ようだ", "A-na + な + ようだ", "N + の + ようだ"],
+      "examples": [
+        {
+          "japanese_sentence": "外は雨が降っているようです。",
+          "vietnamese_sentence": "Hình như bên ngoài trời đang mưa."
+        }
+      ],
+      "similar_grammar": ["～みたいだ", "～そうだ"]
+    },
+    "graph_knowledge": {
+      "grammatical_category": "Appearance",
+      "usage_constraints": ["Phán đoán khách quan hơn so với そうだ"],
+      "politeness_level": "Neutral",
+      "confusable_with": [
+        {"text": "～そうだ", "reason": "Souda dùng khi thấy tận mắt dấu hiệu, Youda dùng khi suy luận từ nhiều yếu tố"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "grammar",
+      "text": "～ために",
+      "meaning_vn": "Để / Vì (mục đích)",
+      "jlpt_level": "N4",
+      "explanation_short": "Diễn tả mục đích của hành động hoặc nguyên nhân.",
+      "tags": ["mục đích", "nguyên nhân"]
+    },
+    "dictionary_data": {
+      "formation": ["V-る + ために", "N + の + ために"],
+      "examples": [
+        {
+          "japanese_sentence": "健康のために毎日走っています。",
+          "vietnamese_sentence": "Tôi chạy bộ mỗi ngày vì sức khỏe."
+        }
+      ],
+      "similar_grammar": ["～ように"]
+    },
+    "graph_knowledge": {
+      "grammatical_category": "Purpose",
+      "usage_constraints": ["Vế trước phải là động từ có ý chí"],
+      "politeness_level": "Neutral",
+      "confusable_with": [
+        {"text": "～ように", "reason": "Youni dùng cho động từ không ý chí hoặc thể khả năng, Tameni dùng cho ý chí mạnh"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "grammar",
+      "text": "～のに",
+      "meaning_vn": "Mặc dù ... vậy mà ...",
+      "jlpt_level": "N4",
+      "explanation_short": "Diễn tả sự bất ngờ, thất vọng về một kết quả trái ngược với kỳ vọng.",
+      "tags": ["ngược đời", "thất vọng"]
+    },
+    "dictionary_data": {
+      "formation": ["V/A/N (thể thông thường) + のに", "A-na + な + のに", "N + な + のn"],
+      "examples": [
+        {
+          "japanese_sentence": "一生懸命勉強したのに、不合格だった。",
+          "vietnamese_sentence": "Mặc dù đã học hết mình vậy mà vẫn bị trượt."
+        }
+      ],
+      "similar_grammar": ["～けれども", "～が"]
+    },
+    "graph_knowledge": {
+      "grammatical_category": "Contrast",
+      "usage_constraints": ["Luôn hàm chứa cảm xúc của người nói (than phiền, ngạc nhiên)"],
+      "politeness_level": "Neutral",
+      "confusable_with": [
+        {"text": "～が", "reason": "Ga chỉ đơn thuần là nối hai vế trái ngược, Noni thể hiện cảm xúc mạnh hơn"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "grammar",
+      "text": "～うちに",
+      "meaning_vn": "Trong lúc còn ... (thì làm gì đó)",
+      "jlpt_level": "N3",
+      "explanation_short": "Tranh thủ làm việc gì đó trước khi trạng thái hiện tại thay đổi.",
+      "tags": ["thời gian", "tranh thủ"]
+    },
+    "dictionary_data": {
+      "formation": ["V-る/V-ている + うちに", "A-i + うちに", "A-na + な + うちに", "N + の + うちに"],
+      "examples": [
+        {
+          "japanese_sentence": "忘れないうちにメモしておきます。",
+          "vietnamese_sentence": "Tôi sẽ ghi chú lại trong khi chưa quên."
+        }
+      ],
+      "similar_grammar": ["～間に"]
+    },
+    "graph_knowledge": {
+      "grammatical_category": "Time Period",
+      "usage_constraints": ["Nhấn mạnh vào việc nếu để thời gian trôi qua sẽ khó thực hiện"],
+      "politeness_level": "Neutral",
+      "confusable_with": [
+        {"text": "～間に", "reason": "Aida ni chỉ đơn thuần là khoảng thời gian, Uchi ni có sắc thái 'tranh thủ'"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "grammar",
+      "text": "～おかげで",
+      "meaning_vn": "Nhờ có ...",
+      "jlpt_level": "N3",
+      "explanation_short": "Diễn tả nguyên nhân dẫn đến một kết quả tốt.",
+      "tags": ["nguyên nhân", "biết ơn"]
+    },
+    "dictionary_data": {
+      "formation": ["V/A/N (thể thông thường) + おかげで", "A-na + な + おかげで", "N + の + おかげで"],
+      "examples": [
+        {
+          "japanese_sentence": "先生のおかげで合格できました。",
+          "vietnamese_sentence": "Nhờ có thầy giáo mà em đã thi đỗ."
+        }
+      ],
+      "similar_grammar": ["～せいで"]
+    },
+    "graph_knowledge": {
+      "grammatical_category": "Causality",
+      "usage_constraints": ["Chỉ dùng cho kết quả tích cực"],
+      "politeness_level": "Neutral",
+      "confusable_with": [
+        {"text": "～せいで", "reason": "Seide dùng cho kết quả tiêu cực (tại vì...)"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "grammar",
+      "text": "～たばかり",
+      "meaning_vn": "Vừa mới làm gì xong",
+      "jlpt_level": "N4",
+      "explanation_short": "Diễn tả hành động vừa mới kết thúc trong cảm nhận của người nói.",
+      "tags": ["thời gian", "hoàn thành"]
+    },
+    "dictionary_data": {
+      "formation": ["V-た + ばかり"],
+      "examples": [
+        {
+          "japanese_sentence": "さっきご飯を食べたばかりです。",
+          "vietnamese_sentence": "Tôi vừa mới ăn cơm xong tức thì."
+        }
+      ],
+      "similar_grammar": ["～たところ"]
+    },
+    "graph_knowledge": {
+      "grammatical_category": "Recency",
+      "usage_constraints": ["Thời gian thực tế có thể đã lâu, nhưng người nói cảm thấy là vừa mới"],
+      "politeness_level": "Neutral",
+      "confusable_with": [
+        {"text": "～たところ", "reason": "Tokoro nhấn mạnh vào thời điểm vật lý vừa xong, Bakari là cảm giác tâm lý"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "grammar",
+      "text": "～によって",
+      "meaning_vn": "Tùy vào / Bởi / Do",
+      "jlpt_level": "N3",
+      "explanation_short": "Diễn tả phương thức, nguyên nhân hoặc sự thay đổi tùy theo đối tượng.",
+      "tags": ["nguyên nhân", "phương thức"]
+    },
+    "dictionary_data": {
+      "formation": ["N + によって"],
+      "examples": [
+        {
+          "japanese_sentence": "人によって考え方が違います。",
+          "vietnamese_sentence": "Tùy vào mỗi người mà cách suy nghĩ khác nhau."
+        }
+      ],
+      "similar_grammar": ["～から"]
+    },
+    "graph_knowledge": {
+      "grammatical_category": "Agent/Reason",
+      "usage_constraints": ["Dùng nhiều trong văn viết hoặc các thông báo trang trọng"],
+      "politeness_level": "Formal",
+      "confusable_with": [
+        {"text": "～で", "reason": "De dùng cho phương tiện thông thường, Ni yotte dùng cho phương thức phức tạp hơn"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "grammar",
+      "text": "～たとおりに",
+      "meaning_vn": "Làm theo đúng như ...",
+      "jlpt_level": "N4",
+      "explanation_short": "Diễn tả việc thực hiện một hành động y hệt như những gì đã thấy hoặc đã nghe.",
+      "tags": ["hành động", "mô phỏng"]
+    },
+    "dictionary_data": {
+      "formation": ["V-た + とおりに", "N + の + とおりに"],
+      "examples": [
+        {
+          "japanese_sentence": "説明書のとおりに組み立てました。",
+          "vietnamese_sentence": "Tôi đã lắp ráp đúng như sách hướng dẫn."
+        }
+      ],
+      "similar_grammar": ["～ように"]
+    },
+    "graph_knowledge": {
+      "grammatical_category": "Manner",
+      "usage_constraints": ["Dùng khi muốn nhấn mạnh sự chính xác 100%"],
+      "politeness_level": "Neutral",
+      "confusable_with": [
+        {"text": "～ように", "reason": "Youni mang tính chất tương đối hơn, Toori ni là tuyệt đối"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "grammar",
+      "text": "～ばいい",
+      "meaning_vn": "Chỉ cần ... là được",
+      "jlpt_level": "N4",
+      "explanation_short": "Đưa ra một giải pháp đơn giản để giải quyết vấn đề.",
+      "tags": ["lời khuyên", "giải pháp"]
+    },
+    "dictionary_data": {
+      "formation": ["V-conditional (thể điều kiện) + いい"],
+      "examples": [
+        {
+          "japanese_sentence": "わからなければ、先生に聞けばいいですよ。",
+          "vietnamese_sentence": "Nếu không hiểu thì chỉ cần hỏi thầy là được mà."
+        }
+      ],
+      "similar_grammar": ["～たらいい"]
+    },
+    "graph_knowledge": {
+      "grammatical_category": "Suggestion",
+      "usage_constraints": ["Thường dùng trong văn nói thân mật"],
+      "politeness_level": "Casual/Neutral",
+      "confusable_with": [
+        {"text": "～ほうがいい", "reason": "Hou ga ii là nên làm (so sánh), Ba ii là chỉ cần làm thế là xong"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "grammar",
+      "text": "～たほうがいい",
+      "meaning_vn": "Nên làm gì đó",
+      "jlpt_level": "N4",
+      "explanation_short": "Dùng để đưa ra lời khuyên mạnh mẽ hoặc so sánh giữa hai lựa chọn.",
+      "tags": ["lời khuyên", "so sánh"]
+    },
+    "dictionary_data": {
+      "formation": ["V-た + ほうがいい"],
+      "examples": [
+        {
+          "japanese_sentence": "病院へ行ったほうがいいですよ。",
+          "vietnamese_sentence": "Bạn nên đi bệnh viện thì tốt hơn đấy."
+        }
+      ],
+      "similar_grammar": ["～たらどう"]
+    },
+    "graph_knowledge": {
+      "grammatical_category": "Advice",
+      "usage_constraints": ["Nếu khuyên đừng làm thì dùng V-ない + ほうがいい"],
+      "politeness_level": "Neutral",
+      "confusable_with": [
+        {"text": "～ればいい", "reason": "Reba ii là giải pháp tối thiểu, Hou ga ii là lựa chọn tốt nhất"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "grammar",
+      "text": "～までに",
+      "meaning_vn": "Trước khi / Trước lúc (hạn chót)",
+      "jlpt_level": "N5",
+      "explanation_short": "Diễn tả một thời hạn cuối cùng mà một hành động phải hoàn thành.",
+      "tags": ["thời gian", "hạn chót"]
+    },
+    "dictionary_data": {
+      "formation": ["N (thời gian) + までに", "V-る + までに"],
+      "examples": [
+        {
+          "japanese_sentence": "5時までに帰らなければなりません。",
+          "vietnamese_sentence": "Tôi phải về nhà trước 5 giờ."
+        }
+      ],
+      "similar_grammar": ["～まで"]
+    },
+    "graph_knowledge": {
+      "grammatical_category": "Deadline",
+      "usage_constraints": ["Dùng cho hành động mang tính kết thúc điểm (không kéo dài)"],
+      "politeness_level": "Neutral",
+      "confusable_with": [
+        {"text": "～まで", "reason": "Made là hành động kéo dài liên tục cho đến lúc đó, Made ni là hành động xong trước lúc đó"}
+      ]
+    }
+  }
+]

@@ -1,0 +1,342 @@
+[
+  {
+    "entry_metadata": {
+      "entry_type": "word",
+      "text": "図書館",
+      "reading": "としょかん",
+      "meaning_vn": "Thư viện",
+      "jlpt_level": "N5",
+      "explanation_short": "Tòa nhà hoặc nơi lưu giữ nhiều sách để đọc và mượn.",
+      "tags": ["địa điểm", "học tập"]
+    },
+    "dictionary_data": {
+      "examples": [
+        {
+          "japanese_sentence": "図書館で静かに勉強します。",
+          "vietnamese_sentence": "Tôi học bài yên tĩnh ở thư viện."
+        }
+      ],
+      "synonyms": ["図書室"],
+      "antonyms": [],
+      "compounds": ["図書館員", "市立図書館"]
+    },
+    "graph_knowledge": {
+      "kanji_list": ["図", "書", "館"],
+      "concepts": ["Giáo dục", "Địa điểm"],
+      "politeness_level": "Neutral",
+      "common_collocations": [
+        {"text": "本を借りる", "relation": "ACTION_OBJECT"},
+        {"text": "静かな", "relation": "DESCRIBED_BY"}
+      ],
+      "confusable_with": [
+        {"text": "大使館", "reason": "Dễ nhầm hậu tố 'Kan' (Tòa nhà) với Đại sứ quán"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "word",
+      "text": "散歩",
+      "reading": "さんぽ",
+      "meaning_vn": "Đi dạo",
+      "jlpt_level": "N5",
+      "explanation_short": "Việc đi bộ thong thả để thư giãn hoặc tập thể dục.",
+      "tags": ["sinh hoạt", "động từ suru"]
+    },
+    "dictionary_data": {
+      "examples": [
+        {
+          "japanese_sentence": "公園を散歩するのが好きです。",
+          "vietnamese_sentence": "Tôi thích đi dạo ở công viên."
+        }
+      ],
+      "synonyms": ["ウォーキング"],
+      "antonyms": [],
+      "compounds": ["散歩道", "朝の散歩"]
+    },
+    "graph_knowledge": {
+      "kanji_list": ["散", "歩"],
+      "concepts": ["Sức khỏe", "Giải trí"],
+      "politeness_level": "Neutral",
+      "common_collocations": [
+        {"text": "犬と", "relation": "CO_OCCUR"},
+        {"text": "気持ちいい", "relation": "DESCRIBED_BY"}
+      ],
+      "confusable_with": [
+        {"text": "歩く", "reason": "Sanpo là đi dạo thư giãn, Aruku là hành động đi bộ nói chung"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "word",
+      "text": "全然",
+      "reading": "ぜんぜん",
+      "meaning_vn": "Hoàn toàn (không)",
+      "jlpt_level": "N4",
+      "explanation_short": "Phó từ dùng để nhấn mạnh sự phủ định hoàn toàn.",
+      "tags": ["phó từ", "ngữ pháp"]
+    },
+    "dictionary_data": {
+      "examples": [
+        {
+          "japanese_sentence": "昨日のテストは全然わかりませんでした。",
+          "vietnamese_sentence": "Bài kiểm tra hôm qua tôi hoàn toàn không hiểu gì cả."
+        }
+      ],
+      "synonyms": ["全く", "さっぱり"],
+      "antonyms": ["よく", "だいぶ"],
+      "compounds": []
+    },
+    "graph_knowledge": {
+      "kanji_list": ["全", "然"],
+      "concepts": ["Mức độ", "Nhấn mạnh"],
+      "politeness_level": "Casual/Neutral",
+      "common_collocations": [
+        {"text": "ない", "relation": "CO_OCCUR"},
+        {"text": "大丈夫", "relation": "CO_OCCUR"}
+      ],
+      "confusable_with": [
+        {"text": "全く", "reason": "Mattaku mang sắc thái trang trọng hơn Zenzen"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "word",
+      "text": "覚える",
+      "reading": "おぼえる",
+      "meaning_vn": "Nhớ/Ghi nhớ/Học thuộc",
+      "jlpt_level": "N4",
+      "explanation_short": "Tiếp nhận thông tin và lưu giữ trong trí nhớ.",
+      "tags": ["động từ", "trí tuệ"]
+    },
+    "dictionary_data": {
+      "examples": [
+        {
+          "japanese_sentence": "新しい単語を10個覚えました。",
+          "vietnamese_sentence": "Tôi đã thuộc lòng 10 từ mới."
+        }
+      ],
+      "synonyms": ["記憶する", "暗記する"],
+      "antonyms": ["忘れる"],
+      "compounds": ["見覚える", "身に覚える"]
+    },
+    "graph_knowledge": {
+      "kanji_list": ["覚"],
+      "concepts": ["Giáo dục", "Tư duy"],
+      "politeness_level": "Neutral",
+      "common_collocations": [
+        {"text": "必死に", "relation": "DESCRIBED_BY"},
+        {"text": "漢字を", "relation": "ACTION_OBJECT"}
+      ],
+      "confusable_with": [
+        {"text": "思い出す", "reason": "Oboeru là ghi nhớ vào, Omoidasu là lấy thông tin từ trí nhớ ra (hồi tưởng)"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "word",
+      "text": "相談",
+      "reading": "そうだん",
+      "meaning_vn": "Thảo luận/Bàn bạc/Hỏi ý kiến",
+      "jlpt_level": "N3",
+      "explanation_short": "Trao đổi ý kiến với người khác để giải quyết vấn đề hoặc đưa ra quyết định.",
+      "tags": ["giao tiếp", "động từ suru"]
+    },
+    "dictionary_data": {
+      "examples": [
+        {
+          "japanese_sentence": "進路について先生に相談しました。",
+          "vietnamese_sentence": "Tôi đã thảo luận với thầy giáo về con đường tương lai."
+        }
+      ],
+      "synonyms": ["協議", "話し合い"],
+      "antonyms": [],
+      "compounds": ["相談窓口", "人生相談"]
+    },
+    "graph_knowledge": {
+      "kanji_list": ["相", "談"],
+      "concepts": ["Giao tiếp", "Vấn đề"],
+      "politeness_level": "Neutral",
+      "common_collocations": [
+        {"text": "親身に", "relation": "DESCRIBED_BY"},
+        {"text": "乗る", "relation": "CO_OCCUR"}
+      ],
+      "confusable_with": [
+        {"text": "質問", "reason": "Shitsumon là hỏi để lấy thông tin, Soudan là hỏi để xin lời khuyên/giải pháp"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "word",
+      "text": "経済",
+      "reading": "けいざい",
+      "meaning_vn": "Kinh tế",
+      "jlpt_level": "N3",
+      "explanation_short": "Hệ thống sản xuất, phân phối và tiêu dùng hàng hóa/dịch vụ.",
+      "tags": ["xã hội", "danh từ"]
+    },
+    "dictionary_data": {
+      "examples": [
+        {
+          "japanese_sentence": "日本の経済について論文を書きます。",
+          "vietnamese_sentence": "Tôi sẽ viết luận văn về kinh tế Nhật Bản."
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "compounds": ["経済学者", "経済成長", "経済的"]
+    },
+    "graph_knowledge": {
+      "kanji_list": ["経", "済"],
+      "concepts": ["Xã hội", "Chính trị"],
+      "politeness_level": "Neutral/Formal",
+      "common_collocations": [
+        {"text": "安定した", "relation": "DESCRIBED_BY"},
+        {"text": "発展する", "relation": "CO_OCCUR"}
+      ],
+      "confusable_with": [
+        {"text": "経営", "reason": "Keizai là kinh tế vĩ mô, Keiei là quản trị/kinh doanh (vi mô)"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "word",
+      "text": "丁寧",
+      "reading": "ていねい",
+      "meaning_vn": "Lịch sự/Cẩn thận",
+      "jlpt_level": "N4",
+      "explanation_short": "Thái độ tôn trọng người khác hoặc làm việc một cách tỉ mỉ.",
+      "tags": ["tính từ na", "tính cách"]
+    },
+    "dictionary_data": {
+      "examples": [
+        {
+          "japanese_sentence": "手紙を丁寧な字で書きました。",
+          "vietnamese_sentence": "Tôi đã viết thư bằng chữ viết cẩn thận."
+        }
+      ],
+      "synonyms": ["親切", "慎重"],
+      "antonyms": ["失礼", "雑"],
+      "compounds": ["丁寧語"]
+    },
+    "graph_knowledge": {
+      "kanji_list": ["丁", "寧"],
+      "concepts": ["Thái độ", "Giao tiếp"],
+      "politeness_level": "Neutral",
+      "common_collocations": [
+        {"text": "扱う", "relation": "ACTION_OBJECT"},
+        {"text": "非常に", "relation": "DESCRIBED_BY"}
+      ],
+      "confusable_with": [
+        {"text": "親切", "reason": "Teinei là lịch sự/đúng mực, Shinsetsu là tốt bụng/nhiệt tình"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "word",
+      "text": "習慣",
+      "reading": "しゅうかん",
+      "meaning_vn": "Thói quen/Tập quán",
+      "jlpt_level": "N3",
+      "explanation_short": "Hành động lặp đi lặp lại hàng ngày hoặc phong tục của một xã hội.",
+      "tags": ["sinh hoạt", "văn hóa"]
+    },
+    "dictionary_data": {
+      "examples": [
+        {
+          "japanese_sentence": "早寝早起きは良い習慣です。",
+          "vietnamese_sentence": "Ngủ sớm dậy sớm là một thói quen tốt."
+        }
+      ],
+      "synonyms": ["習わし", "慣習"],
+      "antonyms": [],
+      "compounds": ["生活習慣", "習慣づける"]
+    },
+    "graph_knowledge": {
+      "kanji_list": ["習", "慣"],
+      "concepts": ["Cuộc sống", "Văn hóa"],
+      "politeness_level": "Neutral",
+      "common_collocations": [
+        {"text": "身につける", "relation": "ACTION_OBJECT"},
+        {"text": "古い", "relation": "DESCRIBED_BY"}
+      ],
+      "confusable_with": [
+        {"text": "癖", "reason": "Shuukan thường là thói quen tốt/ý thức, Kuse thường là tật xấu/vô thức"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "word",
+      "text": "発表",
+      "reading": "はっぴょう",
+      "meaning_vn": "Phát biểu/Công bố/Thuyết trình",
+      "jlpt_level": "N3",
+      "explanation_short": "Đưa thông tin hoặc kết quả nghiên cứu ra cho nhiều người biết.",
+      "tags": ["công việc", "động từ suru"]
+    },
+    "dictionary_data": {
+      "examples": [
+        {
+          "japanese_sentence": "来週、クラスで研究の結果を発表します。",
+          "vietnamese_sentence": "Tuần tới, tôi sẽ thuyết trình kết quả nghiên cứu trước lớp."
+        }
+      ],
+      "synonyms": ["公開", "プレゼン"],
+      "antonyms": [],
+      "compounds": ["発表会", "公式発表"]
+    },
+    "graph_knowledge": {
+      "kanji_list": ["発", "表"],
+      "concepts": ["Giáo dục", "Giao tiếp"],
+      "politeness_level": "Neutral/Formal",
+      "common_collocations": [
+        {"text": "大きな声で", "relation": "DESCRIBED_BY"},
+        {"text": "準備する", "relation": "CO_OCCUR"}
+      ],
+      "confusable_with": [
+        {"text": "報告", "reason": "Happyou là trình bày cho đám đông, Houkoku là báo cáo cho cấp trên"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "word",
+      "text": "忘れる",
+      "reading": "わすれる",
+      "meaning_vn": "Quên",
+      "jlpt_level": "N5",
+      "explanation_short": "Không còn nhớ hoặc để sót lại một vật gì đó.",
+      "tags": ["động từ", "trạng thái"]
+    },
+    "dictionary_data": {
+      "examples": [
+        {
+          "japanese_sentence": "宿題を家に忘れてしまいました。",
+          "vietnamese_sentence": "Tôi lỡ quên bài tập ở nhà mất rồi."
+        }
+      ],
+      "synonyms": ["失念する"],
+      "antonyms": ["覚える", "思い出す"],
+      "compounds": ["忘れ物", "忘れがたい"]
+    },
+    "graph_knowledge": {
+      "kanji_list": ["忘"],
+      "concepts": ["Tâm lý", "Hành động"],
+      "politeness_level": "Neutral",
+      "common_collocations": [
+        {"text": "うっかり", "relation": "DESCRIBED_BY"},
+        {"text": "完全に", "relation": "DESCRIBED_BY"}
+      ],
+      "confusable_with": [
+        {"text": "失う", "reason": "Wasureru là quên thông tin/vật, Ushinau là mất mát đi quyền lợi/sinh mạng/cơ hội"}
+      ]
+    }
+  }
+]

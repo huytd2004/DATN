@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  --color-on-surface-variant: #5a6061;
+  --color-on-surface: #2d3435;
+  --color-error-dim: #4e0309;
+  --color-inverse-surface: #0c0f0f;
+  --color-outline: #757c7d;
+  --color-surface-container: #ebeeef;
+  --color-primary: #45617d;
+  --color-secondary-fixed-dim: #fbc8c8;
+  --color-on-primary-fixed: #25415c;
+  --color-on-background: #2d3435;
+  --color-on-secondary-fixed-variant: #785252;
+  --color-secondary-dim: #6e494a;
+  --color-surface-dim: #d4dbdd;
+  --color-on-secondary-fixed: #583637;
+  --color-surface-tint: #45617d;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-tertiary-fixed-variant: #455a6d;
+  --color-on-error-container: #752121;
+  --color-on-tertiary-fixed: #293e50;
+  --color-tertiary-fixed: #c9dff7;
+  --color-tertiary: #4c6175;
+  --color-outline-variant: #adb3b4;
+  --color-surface-bright: #f9f9f9;
+  --color-secondary: #7c5556;
+  --color-primary-fixed-dim: #bbd7f8;
+  --color-on-primary-container: #385470;
+  --color-on-primary: #f5f8ff;
+  --color-error: #9f403d;
+  --color-primary-dim: #395571;
+  --color-primary-container: #cfe5ff;
+  --color-on-secondary-container: #6d4849;
+  --color-tertiary-dim: #405568;
+  --color-inverse-on-surface: #9c9d9d;
+  --color-error-container: #fe8983;
+  --color-on-tertiary: #f6f9ff;
+  --color-tertiary-fixed-dim: #bbd1e8;
+  --color-inverse-primary: #b8d4f6;
+  --color-surface-container-low: #f2f4f4;
+  --color-surface: #f9f9f9;
+  --color-on-error: #fff7f6;
+  --color-tertiary-container: #c9dff7;
+  --color-background: #f9f9f9;
+  --color-secondary-container: #ffdad9;
+  --color-surface-variant: #dde4e5;
+  --color-surface-container-high: #e4e9ea;
+  --color-on-tertiary-container: #3c5063;
+  --color-on-secondary: #fff7f6;
+  --color-secondary-fixed: #ffdad9;
+  --color-on-primary-fixed-variant: #425e7a;
+  --color-primary-fixed: #cfe5ff;
+  --color-surface-container-highest: #dde4e5;
+
+  --font-headline: "Plus Jakarta Sans", sans-serif;
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-on-surface);
+    font-family: var(--font-body);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    background: rgba(249, 249, 249, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  .ambient-shadow {
+    box-shadow: 0 10px 40px -10px rgba(45, 52, 53, 0.06);
+  }
+  .ghost-border {
+    border: 1px solid rgba(173, 179, 180, 0.15);
+  }
+  .signature-gradient {
+    background: linear-gradient(135deg, #45617d 0%, #cfe5ff 100%);
+  }
+  .signature-gradient-hover:hover {
+    background: linear-gradient(135deg, #45617d 0%, #cfe5ff 100%);
+  }
+}

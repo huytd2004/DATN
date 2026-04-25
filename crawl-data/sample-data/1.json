@@ -1,0 +1,342 @@
+[
+  {
+    "entry_metadata": {
+      "entry_type": "word",
+      "text": "勉強",
+      "reading": "べんきょう",
+      "meaning_vn": "Học tập",
+      "jlpt_level": "N5",
+      "explanation_short": "Việc học tập hoặc nỗ lực tiếp thu kiến thức.",
+      "tags": ["sinh hoạt", "danh từ", "động từ suru"]
+    },
+    "dictionary_data": {
+      "examples": [
+        {
+          "japanese_sentence": "毎日3時間日本語を勉強します。",
+          "vietnamese_sentence": "Mỗi ngày tôi học tiếng Nhật 3 tiếng."
+        }
+      ],
+      "synonyms": ["学習", "学ぶ"],
+      "antonyms": ["遊ぶ"],
+      "compounds": ["勉強不足", "勉強家"]
+    },
+    "graph_knowledge": {
+      "kanji_list": ["勉", "強"],
+      "concepts": ["Giáo dục", "Hành động"],
+      "politeness_level": "Neutral",
+      "common_collocations": [
+        {"text": "熱心に", "relation": "DESCRIBED_BY"},
+        {"text": "進む", "relation": "CO_OCCUR"}
+      ],
+      "confusable_with": [
+        {"text": "強い", "reason": "Cùng Kanji nhưng nghĩa là mạnh mẽ, không phải học tập"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "word",
+      "text": "病院",
+      "reading": "びょういん",
+      "meaning_vn": "Bệnh viện",
+      "jlpt_level": "N5",
+      "explanation_short": "Nơi khám và chữa bệnh.",
+      "tags": ["địa điểm", "y tế"]
+    },
+    "dictionary_data": {
+      "examples": [
+        {
+          "japanese_sentence": "気分が悪いので、病院へ行きます。",
+          "vietnamese_sentence": "Vì cảm thấy không khỏe nên tôi sẽ đi bệnh viện."
+        }
+      ],
+      "synonyms": ["クリニック", "医院"],
+      "antonyms": [],
+      "compounds": ["入院", "退院", "通院"]
+    },
+    "graph_knowledge": {
+      "kanji_list": ["病", "院"],
+      "concepts": ["Y tế", "Địa điểm"],
+      "politeness_level": "Neutral",
+      "common_collocations": [
+        {"text": "大きい", "relation": "DESCRIBED_BY"},
+        {"text": "予約する", "relation": "ACTION_OBJECT"}
+      ],
+      "confusable_with": [
+        {"text": "美容院", "reason": "Dễ nhầm lẫn âm đọc (Byouin vs Biyouin - Tiệm tóc)"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "word",
+      "text": "難しい",
+      "reading": "むずかしい",
+      "meaning_vn": "Khó",
+      "jlpt_level": "N5",
+      "explanation_short": "Không dễ dàng để thực hiện hoặc hiểu.",
+      "tags": ["tính từ i"]
+    },
+    "dictionary_data": {
+      "examples": [
+        {
+          "japanese_sentence": "この漢字の書き方はとても難しいです。",
+          "vietnamese_sentence": "Cách viết chữ Kanji này rất khó."
+        }
+      ],
+      "synonyms": ["困難", "大変"],
+      "antonyms": ["易しい", "簡単"],
+      "compounds": ["難しい顔"]
+    },
+    "graph_knowledge": {
+      "kanji_list": ["難"],
+      "concepts": ["Trạng thái", "Đánh giá"],
+      "politeness_level": "Neutral",
+      "common_collocations": [
+        {"text": "非常に", "relation": "DESCRIBED_BY"},
+        {"text": "問題", "relation": "CO_OCCUR"}
+      ],
+      "confusable_with": [
+        {"text": "易しい", "reason": "Dễ nhầm với 'Hiền lành' (優しい) vì cùng âm đọc Yasashii"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "word",
+      "text": "準備",
+      "reading": "じゅんび",
+      "meaning_vn": "Chuẩn bị",
+      "jlpt_level": "N4",
+      "explanation_short": "Sắp xếp, chuẩn bị trước cho một sự kiện.",
+      "tags": ["hành động", "danh từ", "động từ suru"]
+    },
+    "dictionary_data": {
+      "examples": [
+        {
+          "japanese_sentence": "旅行の準備はもう終わりましたか？",
+          "vietnamese_sentence": "Việc chuẩn bị cho chuyến du lịch đã xong chưa?"
+        }
+      ],
+      "synonyms": ["用意", "支度"],
+      "antonyms": [],
+      "compounds": ["準備運動", "心の準備"]
+    },
+    "graph_knowledge": {
+      "kanji_list": ["准", "備"],
+      "concepts": ["Kế hoạch", "Hành động"],
+      "politeness_level": "Neutral",
+      "common_collocations": [
+        {"text": "進める", "relation": "ACTION_OBJECT"},
+        {"text": "整う", "relation": "CO_OCCUR"}
+      ],
+      "confusable_with": [
+        {"text": "用意", "reason": "Dễ nhầm sắc thái (Youi dùng cho vật dụng nhỏ, Junbi dùng cho kế hoạch lớn)"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "word",
+      "text": "経験",
+      "reading": "けいけん",
+      "meaning_vn": "Kinh nghiệm",
+      "jlpt_level": "N3",
+      "explanation_short": "Những kiến thức hoặc kỹ năng có được qua thực tế.",
+      "tags": ["danh từ", "trí tuệ"]
+    },
+    "dictionary_data": {
+      "examples": [
+        {
+          "japanese_sentence": "日本で働いた経験があります。",
+          "vietnamese_sentence": "Tôi có kinh nghiệm làm việc tại Nhật Bản."
+        }
+      ],
+      "synonyms": ["体験", "実績"],
+      "antonyms": [],
+      "compounds": ["未経験", "経験者"]
+    },
+    "graph_knowledge": {
+      "kanji_list": ["経", "験"],
+      "concepts": ["Công việc", "Cuộc sống"],
+      "politeness_level": "Neutral",
+      "common_collocations": [
+        {"text": "豊富な", "relation": "DESCRIBED_BY"},
+        {"text": "積む", "relation": "ACTION_OBJECT"}
+      ],
+      "confusable_with": [
+        {"text": "体験", "reason": "Keiken là kinh nghiệm tích lũy, Taiken là trải nghiệm nhất thời"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "word",
+      "text": "連絡",
+      "reading": "れんらく",
+      "meaning_vn": "Liên lạc",
+      "jlpt_level": "N4",
+      "explanation_short": "Thông báo hoặc trao đổi thông tin với người khác.",
+      "tags": ["giao tiếp", "danh từ", "động từ suru"]
+    },
+    "dictionary_data": {
+      "examples": [
+        {
+          "japanese_sentence": "後でメールで連絡します。",
+          "vietnamese_sentence": "Tôi sẽ liên lạc qua email sau."
+        }
+      ],
+      "synonyms": ["通知", "報告"],
+      "antonyms": [],
+      "compounds": ["連絡先", "密に連絡"]
+    },
+    "graph_knowledge": {
+      "kanji_list": ["連", "絡"],
+      "concepts": ["Giao tiếp", "Xã hội"],
+      "politeness_level": "Neutral",
+      "common_collocations": [
+        {"text": "取り合う", "relation": "ACTION_OBJECT"},
+        {"text": "密な", "relation": "DESCRIBED_BY"}
+      ],
+      "confusable_with": [
+        {"text": "接続", "reason": "Cùng nghĩa kết nối nhưng Setsuzoku dùng cho kỹ thuật/máy móc"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "word",
+      "text": "忙しい",
+      "reading": "いそがしい",
+      "meaning_vn": "Bận rộn",
+      "jlpt_level": "N5",
+      "explanation_short": "Có nhiều việc phải làm, không có thời gian rảnh.",
+      "tags": ["tính từ i", "trạng thái"]
+    },
+    "dictionary_data": {
+      "examples": [
+        {
+          "japanese_sentence": "今週は仕事がとても忙しいです。",
+          "vietnamese_sentence": "Tuần này công việc rất bận rộn."
+        }
+      ],
+      "synonyms": ["多忙"],
+      "antonyms": ["暇"],
+      "compounds": ["忙しそう"]
+    },
+    "graph_knowledge": {
+      "kanji_list": ["忙"],
+      "concepts": ["Thời gian", "Công việc"],
+      "politeness_level": "Neutral",
+      "common_collocations": [
+        {"text": "非常に", "relation": "DESCRIBED_BY"},
+        {"text": "毎日", "relation": "CO_OCCUR"}
+      ],
+      "confusable_with": [
+        {"text": "急ぐ", "reason": "Cùng bộ tâm đứng nhưng Isogu là động từ 'vội vã'"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "word",
+      "text": "解決",
+      "reading": "かいけつ",
+      "meaning_vn": "Giải quyết",
+      "jlpt_level": "N3",
+      "explanation_short": "Tìm ra câu trả lời hoặc xử lý xong một vấn đề.",
+      "tags": ["hành động", "danh từ", "động từ suru"]
+    },
+    "dictionary_data": {
+      "examples": [
+        {
+          "japanese_sentence": "ようやく問題が解決しました。",
+          "vietnamese_sentence": "Cuối cùng thì vấn đề đã được giải quyết."
+        }
+      ],
+      "synonyms": ["処理", "解消"],
+      "antonyms": [],
+      "compounds": ["解決策", "早期解決"]
+    },
+    "graph_knowledge": {
+      "kanji_list": ["解", "決"],
+      "concepts": ["Logic", "Công việc"],
+      "politeness_level": "Neutral",
+      "common_collocations": [
+        {"text": "図る", "relation": "ACTION_OBJECT"},
+        {"text": "円満に", "relation": "DESCRIBED_BY"}
+      ],
+      "confusable_with": [
+        {"text": "解答", "reason": "Kaitou là trả lời câu hỏi thi, Kaiketsu là xử lý vấn đề"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "word",
+      "text": "興味",
+      "reading": "きょうみ",
+      "meaning_vn": "Hứng thú/Quan tâm",
+      "jlpt_level": "N3",
+      "explanation_short": "Sự quan tâm hoặc tò mò về một điều gì đó.",
+      "tags": ["tâm lý", "danh từ"]
+    },
+    "dictionary_data": {
+      "examples": [
+        {
+          "japanese_sentence": "私は日本の歴史に興味があります。",
+          "vietnamese_sentence": "Tôi có hứng thú với lịch sử Nhật Bản."
+        }
+      ],
+      "synonyms": ["関心", "好奇心"],
+      "antonyms": ["無関心"],
+      "compounds": ["興味深い", "無興味"]
+    },
+    "graph_knowledge": {
+      "kanji_list": ["興", "味"],
+      "concepts": ["Cảm xúc", "Sở thích"],
+      "politeness_level": "Neutral",
+      "common_collocations": [
+        {"text": "持つ", "relation": "ACTION_OBJECT"},
+        {"text": "深い", "relation": "DESCRIBED_BY"}
+      ],
+      "confusable_with": [
+        {"text": "趣味", "reason": "Shumi là sở thích/thói quen, Kyoumi là sự quan tâm nhất thời hoặc sâu sắc"}
+      ]
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "word",
+      "text": "申し上げる",
+      "reading": "もうしあげる",
+      "meaning_vn": "Nói/Trình bày (Khiêm nhường)",
+      "jlpt_level": "N4",
+      "explanation_short": "Dạng khiêm nhường ngữ của động từ 'Nói'.",
+      "tags": ["kính ngữ", "động từ"]
+    },
+    "dictionary_data": {
+      "examples": [
+        {
+          "japanese_sentence": "お礼申し上げます。",
+          "vietnamese_sentence": "Tôi xin được bày tỏ lòng cảm ơn."
+        }
+      ],
+      "synonyms": ["言う", "申す"],
+      "antonyms": [],
+      "compounds": ["お願い申し上げる"]
+    },
+    "graph_knowledge": {
+      "kanji_list": ["申", "上"],
+      "concepts": ["Giao tiếp", "Kính ngữ"],
+      "politeness_level": "Kenjougo (Humble)",
+      "common_collocations": [
+        {"text": "心から", "relation": "DESCRIBED_BY"},
+        {"text": "挨拶", "relation": "CO_OCCUR"}
+      ],
+      "confusable_with": [
+        {"text": "召し上がる", "reason": "Cùng kết thúc đuôi 'agaru' nhưng Meshiagaru là tôn kính ngữ của 'Ăn'"}
+      ]
+    }
+  }
+]

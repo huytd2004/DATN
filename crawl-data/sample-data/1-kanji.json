@@ -1,0 +1,555 @@
+[
+  {
+    "entry_metadata": {
+      "entry_type": "kanji",
+      "text": "勉",
+      "reading": "ベン / つと.める",
+      "meaning_vn": "Miễn",
+      "jlpt_level": "N4",
+      "explanation_short": "Hình ảnh sự nỗ lực, cố gắng hết sức.",
+      "tags": ["cơ bản", "giáo dục"]
+    },
+    "dictionary_data": {
+      "on_yomi": ["ベン"],
+      "kun_yomi": ["つと.める"],
+      "stroke_count": 10,
+      "examples": [
+        { "japanese_sentence": "勉強", "vietnamese_sentence": "Học tập" }
+      ]
+    },
+    "graph_knowledge": {
+      "radicals": ["力"],
+      "components": ["免", "力"],
+      "visual_similarity": [
+        { "text": "免", "reason": "Dễ nhầm vì thiếu bộ Lực" }
+      ],
+      "contains_words": ["勉強", "勤勉"],
+      "mnemonic": "Miễn (免) cưỡng dùng lực (力) để học tập."
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "kanji",
+      "text": "強",
+      "reading": "キョウ / つよ.い",
+      "meaning_vn": "Cường",
+      "jlpt_level": "N5",
+      "explanation_short": "Hình ảnh cái cung mạnh mẽ và con côn trùng.",
+      "tags": ["cơ bản", "tính chất"]
+    },
+    "dictionary_data": {
+      "on_yomi": ["キョウ", "ゴウ"],
+      "kun_yomi": ["つよ.い", "つよ.まる"],
+      "stroke_count": 11,
+      "examples": [
+        { "japanese_sentence": "強力", "vietnamese_sentence": "Mạnh mẽ/Lực lượng mạnh" }
+      ]
+    },
+    "graph_knowledge": {
+      "radicals": ["弓"],
+      "components": ["弓", "口", "虫"],
+      "visual_similarity": [
+        { "text": "弱", "reason": "Cùng bộ Cung nhưng nghĩa trái ngược" }
+      ],
+      "contains_words": ["強い", "強調", "強引"],
+      "mnemonic": "Cái cung (弓) bắn con sâu (虫) thể hiện sự mạnh mẽ."
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "kanji",
+      "text": "病",
+      "reading": "ビョウ / やまい",
+      "meaning_vn": "Bệnh",
+      "jlpt_level": "N5",
+      "explanation_short": "Hình ảnh người nằm trên giường bệnh.",
+      "tags": ["y tế"]
+    },
+    "dictionary_data": {
+      "on_yomi": ["ビョウ", "ヘイ"],
+      "kun_yomi": ["やまい"],
+      "stroke_count": 10,
+      "examples": [
+        { "japanese_sentence": "病気", "vietnamese_sentence": "Bệnh tật" }
+      ]
+    },
+    "graph_knowledge": {
+      "radicals": ["疒"],
+      "components": ["疒", "丙"],
+      "visual_similarity": [
+        { "text": "痛", "reason": "Cùng bộ Nạch (bệnh tật)" }
+      ],
+      "contains_words": ["病人", "病院"],
+      "mnemonic": "Nằm trong mái nhà bệnh (疒) vì bị ốm."
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "kanji",
+      "text": "院",
+      "reading": "イン",
+      "meaning_vn": "Viện",
+      "jlpt_level": "N5",
+      "explanation_short": "Nơi chốn, tòa nhà lớn (bệnh viện, học viện).",
+      "tags": ["địa điểm"]
+    },
+    "dictionary_data": {
+      "on_yomi": ["イン"],
+      "kun_yomi": [],
+      "stroke_count": 10,
+      "examples": [
+        { "japanese_sentence": "大学院", "vietnamese_sentence": "Cao học" }
+      ]
+    },
+    "graph_knowledge": {
+      "radicals": ["⻖"],
+      "components": ["⻖", "完"],
+      "visual_similarity": [
+        { "text": "完", "reason": "Phần bên phải giống hệt" }
+      ],
+      "contains_words": ["入院", "退院"],
+      "mnemonic": "Tòa nhà hoàn thiện (完) bên sườn núi (⻖) là Viện."
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "kanji",
+      "text": "難",
+      "reading": "ナン / むずか.しい",
+      "meaning_vn": "Nan/Nạn",
+      "jlpt_level": "N3",
+      "explanation_short": "Hình ảnh con chim bị mắc kẹt, tượng trưng cho khó khăn.",
+      "tags": ["đánh giá"]
+    },
+    "dictionary_data": {
+      "on_yomi": ["ナン"],
+      "kun_yomi": ["むずか.しい", "かた.い"],
+      "stroke_count": 18,
+      "examples": [
+        { "japanese_sentence": "困難", "vietnamese_sentence": "Khó khăn" }
+      ]
+    },
+    "graph_knowledge": {
+      "radicals": ["隹"],
+      "components": ["廿", "夫", "隹"],
+      "visual_similarity": [
+        { "text": "離", "reason": "Cấu trúc khá giống ở bộ Chuy (chim)" }
+      ],
+      "contains_words": ["難しい", "災難"],
+      "mnemonic": "Con chim (隹) gặp khó khăn khi bay qua vùng đất khô cằn."
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "kanji",
+      "text": "準",
+      "reading": "ジュン",
+      "meaning_vn": "Chuẩn",
+      "jlpt_level": "N4",
+      "explanation_short": "Tiêu chuẩn hoặc chuẩn bị.",
+      "tags": ["kế hoạch"]
+    },
+    "dictionary_data": {
+      "on_yomi": ["ジュン"],
+      "kun_yomi": ["なぞら.える"],
+      "stroke_count": 13,
+      "examples": [
+        { "japanese_sentence": "基準", "vietnamese_sentence": "Tiêu chuẩn" }
+      ]
+    },
+    "graph_knowledge": {
+      "radicals": ["水"],
+      "components": ["水", "隼"],
+      "visual_similarity": [
+        { "text": "準備", "reason": "Thường đi kèm với chữ Bị" }
+      ],
+      "contains_words": ["準備", "準急"],
+      "mnemonic": "Dùng nước (水) để làm chuẩn cho chim ưng (隼)."
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "kanji",
+      "text": "備",
+      "reading": "ビ / そな.える",
+      "meaning_vn": "Bị",
+      "jlpt_level": "N3",
+      "explanation_short": "Chuẩn bị đầy đủ đồ đạc, thiết bị.",
+      "tags": ["kế hoạch"]
+    },
+    "dictionary_data": {
+      "on_yomi": ["ビ"],
+      "kun_yomi": ["そな.える", "そな.わる"],
+      "stroke_count": 12,
+      "examples": [
+        { "japanese_sentence": "設備", "vietnamese_sentence": "Thiết bị" }
+      ]
+    },
+    "graph_knowledge": {
+      "radicals": ["人"],
+      "components": ["人", "艹", "厂", "用"],
+      "visual_similarity": [],
+      "contains_words": ["準備", "備考"],
+      "mnemonic": "Người (人) chuẩn bị đồ dùng (用) cất dưới mái hiên."
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "kanji",
+      "text": "経",
+      "reading": "ケイ / へ.る",
+      "meaning_vn": "Kinh",
+      "jlpt_level": "N3",
+      "explanation_short": "Trải qua thời gian hoặc kinh qua công việc.",
+      "tags": ["thời gian", "kinh tế"]
+    },
+    "dictionary_data": {
+      "on_yomi": ["ケイ", "キョウ"],
+      "kun_yomi": ["へ.る", "た.つ"],
+      "stroke_count": 11,
+      "examples": [
+        { "japanese_sentence": "経済", "vietnamese_sentence": "Kinh tế" }
+      ]
+    },
+    "graph_knowledge": {
+      "radicals": ["糸"],
+      "components": ["糸", "圣"],
+      "visual_similarity": [
+        { "text": "軽", "reason": "Thay bộ Mịch bằng bộ Xa (xe nhẹ)" }
+      ],
+      "contains_words": ["経験", "経営"],
+      "mnemonic": "Sợi chỉ (糸) xuyên suốt kinh độ đất đai (圣)."
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "kanji",
+      "text": "験",
+      "reading": "ケン",
+      "meaning_vn": "Nghiệm",
+      "jlpt_level": "N4",
+      "explanation_short": "Kiểm tra hoặc trải nghiệm thực tế.",
+      "tags": ["giáo dục"]
+    },
+    "dictionary_data": {
+      "on_yomi": ["ケン", "ゲン"],
+      "kun_yomi": ["ため.す"],
+      "stroke_count": 18,
+      "examples": [
+        { "japanese_sentence": "試験", "vietnamese_sentence": "Kỳ thi" }
+      ]
+    },
+    "graph_knowledge": {
+      "radicals": ["馬"],
+      "components": ["馬", "僉"],
+      "visual_similarity": [
+        { "text": "険", "reason": "Thay bộ Mã bằng bộ Phụ (nguy hiểm)" }
+      ],
+      "contains_words": ["経験", "受験"],
+      "mnemonic": "Cưỡi ngựa (馬) đi kiểm nghiệm mọi thứ."
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "kanji",
+      "text": "連",
+      "reading": "レン / つ.れる",
+      "meaning_vn": "Liên",
+      "jlpt_level": "N4",
+      "explanation_short": "Sự kết nối, liên tục hoặc dẫn dắt.",
+      "tags": ["kết nối"]
+    },
+    "dictionary_data": {
+      "on_yomi": ["レン"],
+      "kun_yomi": ["つ.れる", "つら.なる"],
+      "stroke_count": 10,
+      "examples": [
+        { "japanese_sentence": "連休", "vietnamese_sentence": "Kỳ nghỉ dài" }
+      ]
+    },
+    "graph_knowledge": {
+      "radicals": ["⻌"],
+      "components": ["⻌", "車"],
+      "visual_similarity": [
+        { "text": "運", "reason": "Cùng bộ Sước, dễ nhầm với Vận chuyển" }
+      ],
+      "contains_words": ["連絡", "連続"],
+      "mnemonic": "Xe (車) đi trên đường (⻌) tạo thành một chuỗi liên tục."
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "kanji",
+      "text": "絡",
+      "reading": "ラク / から.む",
+      "meaning_vn": "Lạc",
+      "jlpt_level": "N3",
+      "explanation_short": "Sợi dây liên kết hoặc quấn quýt.",
+      "tags": ["kết nối"]
+    },
+    "dictionary_data": {
+      "on_yomi": ["ラク"],
+      "kun_yomi": ["から.む", "から.まる"],
+      "stroke_count": 12,
+      "examples": [
+        { "japanese_sentence": "連絡", "vietnamese_sentence": "Liên lạc" }
+      ]
+    },
+    "graph_knowledge": {
+      "radicals": ["糸"],
+      "components": ["糸", "各"],
+      "visual_similarity": [
+        { "text": "路", "reason": "Phần bên phải giống nhau" }
+      ],
+      "contains_words": ["連絡", "脈絡"],
+      "mnemonic": "Mọi người (各) dùng sợi chỉ (糸) để liên lạc."
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "kanji",
+      "text": "忙",
+      "reading": "ボウ / いそが.しい",
+      "meaning_vn": "Mang",
+      "jlpt_level": "N4",
+      "explanation_short": "Tâm trí bận rộn đến mức đánh mất mình.",
+      "tags": ["trạng thái"]
+    },
+    "dictionary_data": {
+      "on_yomi": ["ボウ"],
+      "kun_yomi": ["いそが.しい"],
+      "stroke_count": 6,
+      "examples": [
+        { "japanese_sentence": "多忙", "vietnamese_sentence": "Rất bận rộn" }
+      ]
+    },
+    "graph_knowledge": {
+      "radicals": ["忄"],
+      "components": ["忄", "亡"],
+      "visual_similarity": [
+        { "text": "忘", "reason": "Dễ nhầm với 'Quên' (bộ Tâm nằm dưới)" }
+      ],
+      "contains_words": ["忙しい"],
+      "mnemonic": "Tâm (忄) bị mất (亡) vì quá bận rộn."
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "kanji",
+      "text": "解",
+      "reading": "カイ / と.く",
+      "meaning_vn": "Giải",
+      "jlpt_level": "N3",
+      "explanation_short": "Dùng dao để mổ xẻ, giải quyết vấn đề.",
+      "tags": ["logic"]
+    },
+    "dictionary_data": {
+      "on_yomi": ["カイ", "ゲ"],
+      "kun_yomi": ["と.く", "と.ける"],
+      "stroke_count": 13,
+      "examples": [
+        { "japanese_sentence": "解決", "vietnamese_sentence": "Giải quyết" }
+      ]
+    },
+    "graph_knowledge": {
+      "radicals": ["角"],
+      "components": ["角", "刀", "牛"],
+      "visual_similarity": [],
+      "contains_words": ["解決", "解説", "理解"],
+      "mnemonic": "Dùng con dao (刀) để mổ sừng (角) con bò (牛) là cách giải quyết."
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "kanji",
+      "text": "決",
+      "reading": "ケツ / き.める",
+      "meaning_vn": "Quyết",
+      "jlpt_level": "N4",
+      "explanation_short": "Quyết định một việc gì đó như dòng nước chảy.",
+      "tags": ["hành động"]
+    },
+    "dictionary_data": {
+      "on_yomi": ["ケツ"],
+      "kun_yomi": ["き.める", "き.まる"],
+      "stroke_count": 7,
+      "examples": [
+        { "japanese_sentence": "決定", "vietnamese_sentence": "Quyết định" }
+      ]
+    },
+    "graph_knowledge": {
+      "radicals": ["水"],
+      "components": ["水", "夬"],
+      "visual_similarity": [
+        { "text": "快", "reason": "Thay bộ Thủy bằng bộ Tâm (sảng khoái)" }
+      ],
+      "contains_words": ["解決", "決して"],
+      "mnemonic": "Quyết định dứt khoát như dòng nước (水) chảy qua khe hở."
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "kanji",
+      "text": "興",
+      "reading": "キョウ",
+      "meaning_vn": "Hưng",
+      "jlpt_level": "N3",
+      "explanation_short": "Sự hưng phấn, hứng thú hoặc thịnh vượng.",
+      "tags": ["tâm lý"]
+    },
+    "dictionary_data": {
+      "on_yomi": ["キョウ", "コウ"],
+      "kun_yomi": ["おこ.る", "おこ.す"],
+      "stroke_count": 16,
+      "examples": [
+        { "japanese_sentence": "興味", "vietnamese_sentence": "Hứng thú" }
+      ]
+    },
+    "graph_knowledge": {
+      "radicals": ["臼"],
+      "components": ["臼", "同", "八"],
+      "visual_similarity": [],
+      "contains_words": ["興味", "興奮"],
+      "mnemonic": "Nhiều người cùng (同) dùng tay nâng cái cối (臼) lên là sự hưng thịnh."
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "kanji",
+      "text": "味",
+      "reading": "ミ / あじ",
+      "meaning_vn": "Vị",
+      "jlpt_level": "N4",
+      "explanation_short": "Hương vị hoặc ý nghĩa của sự vật.",
+      "tags": ["ẩm thực", "cảm nhận"]
+    },
+    "dictionary_data": {
+      "on_yomi": ["ミ"],
+      "kun_yomi": ["あじ", "あじ.わう"],
+      "stroke_count": 8,
+      "examples": [
+        { "japanese_sentence": "意味", "vietnamese_sentence": "Ý nghĩa" }
+      ]
+    },
+    "graph_knowledge": {
+      "radicals": ["口"],
+      "components": ["口", "未"],
+      "visual_similarity": [
+        { "text": "未来", "reason": "Chứa chữ Vị (chưa tới)" }
+      ],
+      "contains_words": ["興味", "美味しい"],
+      "mnemonic": "Dùng miệng (口) nếm cành cây chưa (未) ra quả để biết vị."
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "kanji",
+      "text": "申",
+      "reading": "シン / もう.す",
+      "meaning_vn": "Thân",
+      "jlpt_level": "N4",
+      "explanation_short": "Bày tỏ, trình bày một cách khiêm tốn.",
+      "tags": ["giao tiếp"]
+    },
+    "dictionary_data": {
+      "on_yomi": ["シン"],
+      "kun_yomi": ["もう.す"],
+      "stroke_count": 5,
+      "examples": [
+        { "japanese_sentence": "申請", "vietnamese_sentence": "Thỉnh cầu/Đăng ký" }
+      ]
+    },
+    "graph_knowledge": {
+      "radicals": ["田"],
+      "components": ["田", "丨"],
+      "visual_similarity": [
+        { "text": "神", "reason": "Thêm bộ Thị bên trái (Thần linh)" },
+        { "text": "由", "reason": "Nét sổ không xuyên xuống" }
+      ],
+      "contains_words": ["申し上げる", "申告"],
+      "mnemonic": "Thân mình thẳng đứng (丨) nói giữa ruộng (田) để trình bày."
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "kanji",
+      "text": "上",
+      "reading": "ジョウ / うえ",
+      "meaning_vn": "Thượng",
+      "jlpt_level": "N5",
+      "explanation_short": "Biểu đạt phía bên trên.",
+      "tags": ["cơ bản", "vị trí"]
+    },
+    "dictionary_data": {
+      "on_yomi": ["ジョウ", "ショウ"],
+      "kun_yomi": ["うえ", "あ.げる", "のぼ.る"],
+      "stroke_count": 3,
+      "examples": [
+        { "japanese_sentence": "屋上", "vietnamese_sentence": "Sân thượng" }
+      ]
+    },
+    "graph_knowledge": {
+      "radicals": ["一"],
+      "components": ["一", "卜"],
+      "visual_similarity": [
+        { "text": "下", "reason": "Trái nghĩa (phía dưới)" }
+      ],
+      "contains_words": ["上手", "上げる"],
+      "mnemonic": "Nét gạch trên mặt đất chỉ hướng lên trên."
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "kanji",
+      "text": "食",
+      "reading": "ショク / た.べる",
+      "meaning_vn": "Thực",
+      "jlpt_level": "N5",
+      "explanation_short": "Hình ảnh cái bát có nắp đậy, biểu thị việc ăn.",
+      "tags": ["ẩm thực", "cơ bản"]
+    },
+    "dictionary_data": {
+      "on_yomi": ["ショク", "ジキ"],
+      "kun_yomi": ["た.べる", "く.う"],
+      "stroke_count": 9,
+      "examples": [
+        { "japanese_sentence": "食事", "vietnamese_sentence": "Bữa ăn" }
+      ]
+    },
+    "graph_knowledge": {
+      "radicals": ["食"],
+      "components": ["人", "良"],
+      "visual_similarity": [
+        { "text": "飲", "reason": "Cùng bộ Thực bên trái" }
+      ],
+      "contains_words": ["食べる", "食堂"],
+      "mnemonic": "Người (人) ăn đồ tốt (良) thì là thực (食)."
+    }
+  },
+  {
+    "entry_metadata": {
+      "entry_type": "kanji",
+      "text": "事",
+      "reading": "ジ / こと",
+      "meaning_vn": "Sự",
+      "jlpt_level": "N5",
+      "explanation_short": "Sự việc, công việc hoặc sự vật không hình dáng.",
+      "tags": ["cơ bản"]
+    },
+    "dictionary_data": {
+      "on_yomi": ["ジ"],
+      "kun_yomi": ["こと"],
+      "stroke_count": 8,
+      "examples": [
+        { "japanese_sentence": "仕事", "vietnamese_sentence": "Công việc" }
+      ]
+    },
+    "graph_knowledge": {
+      "radicals": ["亅"],
+      "components": ["一", "口", "彐", "亅"],
+      "visual_similarity": [],
+      "contains_words": ["食事", "大事", "行事"],
+      "mnemonic": "Một (一) cái miệng (口) nói về công việc (事) hàng ngày."
+    }
+  }
+]

@@ -1,0 +1,753 @@
+<!-- Thông tin cá nhân (Cập nhật) -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>User Profile - ZenPulse AI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#5a6061",
+                        "on-surface": "#2d3435",
+                        "error-dim": "#4e0309",
+                        "inverse-surface": "#0c0f0f",
+                        "outline": "#757c7d",
+                        "surface-container": "#ebeeef",
+                        "primary": "#45617d",
+                        "secondary-fixed-dim": "#fbc8c8",
+                        "on-primary-fixed": "#25415c",
+                        "on-background": "#2d3435",
+                        "on-secondary-fixed-variant": "#785252",
+                        "secondary-dim": "#6e494a",
+                        "surface-dim": "#d4dbdd",
+                        "on-secondary-fixed": "#583637",
+                        "surface-tint": "#45617d",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#455a6d",
+                        "on-error-container": "#752121",
+                        "on-error": "#fff7f6",
+                        "error": "#9f403d",
+                        "error-container": "#fe8983",
+                        "primary-fixed-dim": "#bbd7f8",
+                        "on-primary-container": "#385470",
+                        "on-primary": "#f5f8ff",
+                        "primary-dim": "#395571",
+                        "primary-container": "#cfe5ff",
+                        "on-secondary-container": "#6d4849",
+                        "tertiary-dim": "#405568",
+                        "inverse-on-surface": "#9c9d9d",
+                        "on-tertiary": "#f6f9ff",
+                        "tertiary-fixed-dim": "#bbd1e8",
+                        "inverse-primary": "#b8d4f6",
+                        "surface-container-low": "#f2f4f4",
+                        "surface": "#f9f9f9",
+                        "tertiary-container": "#c9dff7",
+                        "background": "#f9f9f9",
+                        "secondary-container": "#ffdad9",
+                        "surface-variant": "#dde4e5",
+                        "surface-container-high": "#e4e9ea",
+                        "on-tertiary-container": "#3c5063",
+                        "on-secondary": "#fff7f6",
+                        "secondary-fixed": "#ffdad9",
+                        "on-primary-fixed-variant": "#425e7a",
+                        "primary-fixed": "#cfe5ff",
+                        "surface-container-highest": "#dde4e5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans", "sans-serif"],
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, h5, h6, .font-headline, .font-display { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass-panel {
+            background: rgba(249, 249, 249, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .signature-gradient {
+            background: linear-gradient(135deg, #45617d 0%, #cfe5ff 100%);
+        }
+        .ambient-shadow {
+            box-shadow: 0 10px 40px -10px rgba(45, 52, 53, 0.06);
+        }
+        .ghost-border {
+            border: 1px solid rgba(173, 179, 180, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased min-h-screen flex flex-col pt-16 pb-24 md:pb-0">
+<!-- TopAppBar (Web & Mobile Header Shell) -->
+<header class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-xl text-blue-800 dark:text-blue-300 font-['Plus_Jakarta_Sans'] tracking-tight border-b border-slate-100 dark:border-slate-800">
+<div class="flex justify-between items-center px-6 h-16 w-full max-w-7xl mx-auto">
+<div class="text-xl font-bold text-blue-900 dark:text-blue-100">
+            ZenPulse AI
+        </div>
+<!-- Web Navigation Cluster (Hidden on Mobile) -->
+<nav class="hidden md:flex space-x-8 items-center">
+<a class="text-slate-500 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 transition-colors px-3 py-2 rounded-lg flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-lg">menu_book</span>
+<span class="font-medium text-sm">Learn</span>
+</a>
+<a class="text-slate-500 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 transition-colors px-3 py-2 rounded-lg flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-lg">emoji_events</span>
+<span class="font-medium text-sm">Goals</span>
+</a>
+<a class="text-slate-500 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 transition-colors px-3 py-2 rounded-lg flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-lg">bar_chart</span>
+<span class="font-medium text-sm">Progress</span>
+</a>
+<a class="text-blue-700 dark:text-blue-400 font-semibold hover:bg-slate-200/50 dark:hover:bg-slate-800/50 transition-colors px-3 py-2 rounded-lg flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="text-sm">Profile</span>
+</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="text-slate-500 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 transition-colors p-2 rounded-full">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<img alt="User profile photo" class="w-8 h-8 rounded-full object-cover ghost-border" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxkgVzkxE77et6XnzItlINforFfWaqdiwDEt56WEJhOy7bIV3_yrYc6BYKRxM8FJ8XKd212Xx7PhohgoZoo-IFjko_guF1CrlP4JfpedeXb7DwgOocjvpr25cX1a3V9hy3g2ATCvR2R9ioiQdtMO6T-EWcc9FCmfNheJFdBgYCzR2HbF8zHmtFX4UwSVDtQ7qpj29gDRJ9hv1Htg02NqFQqsDpAx6Gw1JRrFuuFtJ-cXvOVxqG3uM_TDek6BdUFawKVxkk6lkqmPs"/>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 w-full max-w-7xl mx-auto px-6 py-12 md:py-24">
+<!-- Profile Header Section (Asymmetric Layout) -->
+<section class="flex flex-col md:flex-row items-start md:items-center justify-between gap-12 mb-16">
+<div class="flex items-center gap-8">
+<div class="relative">
+<div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden ambient-shadow">
+<img alt="Minh Hoàng" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjZ8Sf-kUF0qvs6wWDee_n0Pg0LtU6orl0Vlz4iaZ6hUi6MyidRSgfAK7mFvXvFn4XBGeVNnbpYk7Q1AvFL02HLRFNAXAusymE1pBsp-t5Pljm2Ov9PbceB5RK_2bZ5hE-9FIPBzftFl6T-AQQk4GR3Pp_Mb2kOamGrQgFkE7fHm1A7fmQeGTWTrcaVPew_Sum_wIRSo_NsXfNi3OxlTUm9_d-t7Wt17_6mU5AYyTE9qRmUIU_PHVjrLDuVnOSeXqgtHOa-GEuTS8"/>
+</div>
+<div class="absolute bottom-2 right-2 bg-surface-container-lowest rounded-full p-2 ambient-shadow cursor-pointer hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-primary text-xl">edit</span>
+</div>
+</div>
+<div>
+<h1 class="font-headline text-4xl md:text-5xl font-bold text-on-surface tracking-tight mb-2">Minh Hoàng</h1>
+<div class="flex items-center gap-3">
+<span class="px-4 py-1.5 bg-primary-container text-on-primary-container rounded-full text-sm font-medium font-body flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">flag</span>
+                        JLPT N3 Goal
+                    </span>
+</div>
+</div>
+</div>
+<!-- Quick Actions -->
+<div class="flex gap-4 self-start md:self-center">
+<button class="px-6 py-3 bg-surface-container-low text-on-surface-variant font-medium rounded-full hover:bg-surface-variant transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">share</span>
+                Share Profile
+            </button>
+</div>
+</section>
+<!-- Stats & Target Level Row -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+<!-- Target Level Card -->
+<div class="bg-surface-container-lowest rounded-xl p-8 ambient-shadow flex flex-col justify-between group overflow-hidden relative">
+<div class="absolute -right-8 -top-8 w-32 h-32 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition-colors"></div>
+<div class="relative z-10">
+<div class="flex items-center gap-3 mb-6">
+<div class="p-3 bg-primary-container text-on-primary-container rounded-full">
+<span class="material-symbols-outlined">star_rate</span>
+</div>
+<h3 class="font-headline text-lg font-semibold text-on-surface">Target Level</h3>
+</div>
+<div>
+<span class="font-display text-6xl font-bold text-primary">N3</span>
+<p class="text-sm text-on-surface-variant mt-2">Intermediate Proficiency</p>
+</div>
+<div class="mt-6 flex items-center gap-2">
+<div class="flex-1 h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 65%;"></div>
+</div>
+<span class="text-xs font-semibold text-primary">65%</span>
+</div>
+</div>
+</div>
+<!-- Streak Card -->
+<div class="bg-surface-container-lowest rounded-xl p-8 ambient-shadow relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary-fixed-dim/20 rounded-full blur-3xl -mr-10 -mt-10 transition-transform group-hover:scale-150 duration-700"></div>
+<div class="flex flex-col h-full relative z-10">
+<div class="flex items-center gap-3 mb-6">
+<div class="p-3 bg-secondary-container text-on-secondary-container rounded-full">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<h3 class="font-headline text-lg font-semibold text-on-surface">Current Streak</h3>
+</div>
+<div class="mt-auto">
+<div class="flex items-baseline gap-2">
+<span class="font-display text-6xl font-bold text-secondary">42</span>
+<span class="text-on-surface-variant font-medium">days</span>
+</div>
+<p class="text-sm text-on-surface-variant mt-2 leading-relaxed">Discipline is your strength.</p>
+</div>
+</div>
+</div>
+<!-- Focus Time Card -->
+<div class="bg-surface-container-lowest rounded-xl p-8 ambient-shadow">
+<div class="flex flex-col h-full">
+<div class="flex items-center justify-between mb-6">
+<div class="flex items-center gap-3">
+<div class="p-3 bg-surface-container-high text-on-surface rounded-full">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<h3 class="font-headline text-lg font-semibold text-on-surface">Focus Time</h3>
+</div>
+<span class="text-xs font-medium text-on-surface-variant bg-surface-container px-2 py-1 rounded-full">Week</span>
+</div>
+<div class="mt-auto">
+<div class="flex items-baseline gap-2">
+<span class="font-display text-5xl font-bold text-on-surface">14</span>
+<span class="text-on-surface-variant font-medium">h</span>
+<span class="font-display text-5xl font-bold text-on-surface ml-2">30</span>
+<span class="text-on-surface-variant font-medium">m</span>
+</div>
+<div class="flex items-center gap-2 mt-4 text-sm text-primary font-medium">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+<span>+2.5 hrs vs last week</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Content Sections: Mistakes & History -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+<!-- Common Mistakes Section -->
+<section>
+<div class="flex items-center justify-between mb-8">
+<h2 class="font-headline text-2xl font-bold text-on-surface">Lỗi sai đã gặp</h2>
+<button class="text-primary text-sm font-semibold hover:underline">Xem tất cả</button>
+</div>
+<div class="space-y-4">
+<div class="bg-surface-container-lowest rounded-xl p-6 ambient-shadow border-l-4 border-error/40 group hover:bg-surface-bright transition-colors">
+<div class="flex justify-between items-start mb-2">
+<span class="text-error font-bold font-display text-lg">〜ている vs 〜た</span>
+<span class="px-2 py-1 bg-error-container/20 text-error text-[10px] uppercase font-bold rounded">Grammar</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed">Nhầm lẫn giữa trạng thái đang tiếp diễn và hành động đã kết thúc trong quá khứ.</p>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-6 ambient-shadow border-l-4 border-error/40 group hover:bg-surface-bright transition-colors">
+<div class="flex justify-between items-start mb-2">
+<span class="text-error font-bold font-display text-lg">独身 (どくしん)</span>
+<span class="px-2 py-1 bg-error-container/20 text-error text-[10px] uppercase font-bold rounded">Vocabulary</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed">Hay viết sai bộ Nhân đứng thành bộ Nhân nằm trong chữ Kanji 独.</p>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-6 ambient-shadow border-l-4 border-error/40 group hover:bg-surface-bright transition-colors">
+<div class="flex justify-between items-start mb-2">
+<span class="text-error font-bold font-display text-lg">〜に従って</span>
+<span class="px-2 py-1 bg-error-container/20 text-error text-[10px] uppercase font-bold rounded">N3 Grammar</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed">Dùng sai ngữ cảnh với "〜につれて". "に従って" nhấn mạnh hơn vào sự thay đổi đồng thời.</p>
+</div>
+</div>
+</section>
+<!-- Exercise History Section -->
+<section>
+<div class="flex items-center justify-between mb-8">
+<h2 class="font-headline text-2xl font-bold text-on-surface">Lịch sử làm bài tập</h2>
+<button class="text-primary text-sm font-semibold hover:underline">Chi tiết</button>
+</div>
+<div class="bg-surface-container-lowest rounded-xl ambient-shadow overflow-hidden">
+<table class="w-full text-left">
+<thead class="bg-surface-container-low/50">
+<tr>
+<th class="px-6 py-4 text-xs font-bold text-on-surface-variant uppercase tracking-wider">Bài tập</th>
+<th class="px-6 py-4 text-xs font-bold text-on-surface-variant uppercase tracking-wider">Điểm số</th>
+<th class="px-6 py-4 text-xs font-bold text-on-surface-variant uppercase tracking-wider">Ngày</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/10">
+<tr class="hover:bg-surface-bright transition-colors cursor-pointer">
+<td class="px-6 py-4">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">JLPT N3 Mock #4</span>
+<span class="text-xs text-on-surface-variant">Phần Đọc hiểu</span>
+</div>
+</td>
+<td class="px-6 py-4">
+<span class="text-primary font-bold">160/180</span>
+</td>
+<td class="px-6 py-4 text-sm text-on-surface-variant">20/10/2023</td>
+</tr>
+<tr class="hover:bg-surface-bright transition-colors cursor-pointer">
+<td class="px-6 py-4">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Ngữ pháp N3 (A-Z)</span>
+<span class="text-xs text-on-surface-variant">Trắc nghiệm</span>
+</div>
+</td>
+<td class="px-6 py-4">
+<span class="text-primary font-bold">45/50</span>
+</td>
+<td class="px-6 py-4 text-sm text-on-surface-variant">18/10/2023</td>
+</tr>
+<tr class="hover:bg-surface-bright transition-colors cursor-pointer">
+<td class="px-6 py-4">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Kanji N3 Weekly</span>
+<span class="text-xs text-on-surface-variant">Kiểm tra từ vựng</span>
+</div>
+</td>
+<td class="px-6 py-4">
+<span class="text-primary font-bold">92%</span>
+</td>
+<td class="px-6 py-4 text-sm text-on-surface-variant">15/10/2023</td>
+</tr>
+<tr class="hover:bg-surface-bright transition-colors cursor-pointer">
+<td class="px-6 py-4">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Luyện nghe N3 #12</span>
+<span class="text-xs text-on-surface-variant">Nghe hiểu</span>
+</div>
+</td>
+<td class="px-6 py-4">
+<span class="text-primary font-bold">38/60</span>
+</td>
+<td class="px-6 py-4 text-sm text-on-surface-variant">12/10/2023</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</div>
+<!-- Preferences Section -->
+<section class="max-w-3xl">
+<h2 class="font-headline text-2xl font-bold text-on-surface mb-8">Cài đặt &amp; Tùy chỉnh</h2>
+<div class="space-y-4">
+<!-- Notifications Toggle -->
+<div class="bg-surface-container-lowest rounded-xl p-6 ambient-shadow flex items-center justify-between group hover:bg-surface-bright transition-colors cursor-pointer">
+<div class="flex items-center gap-6">
+<div class="p-4 bg-surface-container-low rounded-full text-on-surface-variant group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined">notifications_active</span>
+</div>
+<div>
+<h4 class="font-headline text-lg font-medium text-on-surface mb-1">Nhắc nhở học tập</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Nhận thông báo hàng ngày để duy trì chuỗi học.</p>
+</div>
+</div>
+<div class="w-12 h-6 bg-primary rounded-full relative">
+<div class="absolute right-1 top-1 w-4 h-4 bg-on-primary rounded-full"></div>
+</div>
+</div>
+<!-- Theme Preference -->
+<div class="bg-surface-container-lowest rounded-xl p-6 ambient-shadow flex flex-col md:flex-row md:items-center justify-between gap-6 group hover:bg-surface-bright transition-colors cursor-pointer">
+<div class="flex items-center gap-6">
+<div class="p-4 bg-surface-container-low rounded-full text-on-surface-variant group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined">palette</span>
+</div>
+<div>
+<h4 class="font-headline text-lg font-medium text-on-surface mb-1">Giao diện Dojo</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Điều chỉnh môi trường học tập trực quan.</p>
+</div>
+</div>
+<div class="flex bg-surface-container-high p-1 rounded-lg">
+<div class="px-4 py-2 bg-surface-container-lowest text-on-surface rounded-md text-sm font-medium shadow-sm">Sáng</div>
+<div class="px-4 py-2 text-on-surface-variant rounded-md text-sm font-medium hover:text-on-surface transition-colors">Tối</div>
+<div class="px-4 py-2 text-on-surface-variant rounded-md text-sm font-medium hover:text-on-surface transition-colors">Hệ thống</div>
+</div>
+</div>
+<!-- Account Settings Link -->
+<div class="bg-surface-container-lowest rounded-xl p-6 ambient-shadow flex items-center justify-between group hover:bg-surface-bright transition-colors cursor-pointer mt-8">
+<div class="flex items-center gap-6">
+<div class="p-4 bg-surface-container-low rounded-full text-on-surface-variant">
+<span class="material-symbols-outlined">manage_accounts</span>
+</div>
+<div>
+<h4 class="font-headline text-lg font-medium text-on-surface mb-1">Tài khoản &amp; Bảo mật</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Quản lý email, mật khẩu và dữ liệu cá nhân.</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-on-surface transition-colors">chevron_right</span>
+</div>
+</div>
+</section>
+<!-- Logout Action -->
+<div class="mt-16 mb-12 max-w-3xl flex justify-end">
+<button class="px-6 py-3 text-secondary font-medium rounded-full hover:bg-secondary-container/50 transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined">logout</span>
+            Đăng xuất
+        </button>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-slate-50/90 dark:bg-slate-900/90 backdrop-blur-md rounded-t-3xl shadow-[0_-4px_20px_rgba(0,0,0,0.05)] z-50 text-[11px] font-medium font-['Plus_Jakarta_Sans'] text-blue-800 dark:text-blue-300">
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-5 py-2 hover:text-blue-700 dark:hover:text-blue-300" href="#">
+<span class="material-symbols-outlined text-2xl mb-1">menu_book</span>
+<span>Learn</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-5 py-2 hover:text-blue-700 dark:hover:text-blue-300" href="#">
+<span class="material-symbols-outlined text-2xl mb-1">emoji_events</span>
+<span>Goals</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-5 py-2 hover:text-blue-700 dark:hover:text-blue-300" href="#">
+<span class="material-symbols-outlined text-2xl mb-1">bar_chart</span>
+<span>Progress</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-blue-100 dark:bg-blue-900/40 text-blue-900 dark:text-blue-100 rounded-2xl px-5 py-2 translate-y-[-2px] transition-transform" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" style="font-variation-settings: 'FILL' 1;">person</span>
+<span>Profile</span>
+</a>
+</nav>
+</body></html>
+
+<!-- Đăng nhập -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Login - ZenPulse AI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#5a6061",
+                        "on-surface": "#2d3435",
+                        "error-dim": "#4e0309",
+                        "inverse-surface": "#0c0f0f",
+                        "outline": "#757c7d",
+                        "surface-container": "#ebeeef",
+                        "primary": "#45617d",
+                        "secondary-fixed-dim": "#fbc8c8",
+                        "on-primary-fixed": "#25415c",
+                        "on-background": "#2d3435",
+                        "on-secondary-fixed-variant": "#785252",
+                        "secondary-dim": "#6e494a",
+                        "surface-dim": "#d4dbdd",
+                        "on-secondary-fixed": "#583637",
+                        "surface-tint": "#45617d",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#455a6d",
+                        "on-error-container": "#752121",
+                        "on-tertiary-fixed": "#293e50",
+                        "tertiary-fixed": "#c9dff7",
+                        "tertiary": "#4c6175",
+                        "outline-variant": "#adb3b4",
+                        "surface-bright": "#f9f9f9",
+                        "secondary": "#7c5556",
+                        "primary-fixed-dim": "#bbd7f8",
+                        "on-primary-container": "#385470",
+                        "on-primary": "#f5f8ff",
+                        "error": "#9f403d",
+                        "primary-dim": "#395571",
+                        "primary-container": "#cfe5ff",
+                        "on-secondary-container": "#6d4849",
+                        "tertiary-dim": "#405568",
+                        "inverse-on-surface": "#9c9d9d",
+                        "error-container": "#fe8983",
+                        "on-tertiary": "#f6f9ff",
+                        "tertiary-fixed-dim": "#bbd1e8",
+                        "inverse-primary": "#b8d4f6",
+                        "surface-container-low": "#f2f4f4",
+                        "surface": "#f9f9f9",
+                        "on-error": "#fff7f6",
+                        "tertiary-container": "#c9dff7",
+                        "background": "#f9f9f9",
+                        "secondary-container": "#ffdad9",
+                        "surface-variant": "#dde4e5",
+                        "surface-container-high": "#e4e9ea",
+                        "on-tertiary-container": "#3c5063",
+                        "on-secondary": "#fff7f6",
+                        "secondary-fixed": "#ffdad9",
+                        "on-primary-fixed-variant": "#425e7a",
+                        "primary-fixed": "#cfe5ff",
+                        "surface-container-highest": "#dde4e5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    "fontSize": {}
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(249, 249, 249, 0.7);
+            backdrop-filter: blur(12px);
+        }
+        .signature-gradient-hover:hover {
+            background: linear-gradient(135deg, #45617d, #cfe5ff);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased flex flex-col justify-center items-center relative overflow-hidden h-screen">
+<!-- Decorative Zen Elements -->
+<div class="absolute top-[-10%] left-[-5%] w-[40%] h-[50%] bg-primary/5 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+<div class="absolute bottom-[-10%] right-[-5%] w-[30%] h-[40%] bg-secondary/5 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+<main class="w-full max-w-lg px-6 z-10">
+<!-- Logo / Brand Anchor -->
+<div class="text-center flex flex-col items-center mb-8">
+<div class="w-16 h-16 rounded-xl bg-surface-container-lowest flex items-center justify-center mb-6 shadow-[0_20px_40px_rgba(45,52,53,0.06)]">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="spa">spa</span>
+</div>
+<h1 class="font-display text-4xl font-extrabold text-primary tracking-tight">ZenPulse AI</h1>
+<p class="font-body text-on-surface-variant mt-3 text-sm tracking-wide">Enter your sanctuary of learning.</p>
+</div>
+<!-- Login Card - Surface Lowest for subtle pop -->
+<div class="bg-surface-container-lowest rounded-xl p-10 shadow-[0_30px_60px_rgba(45,52,53,0.04)] relative">
+<form class="flex flex-col gap-6">
+<!-- Email Field -->
+<div class="flex flex-col gap-2">
+<label class="font-label text-sm text-on-surface font-medium ml-1" for="email">Email</label>
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline-variant group-focus-within:text-primary transition-colors" data-icon="mail">mail</span>
+<input class="w-full bg-surface-container-high text-on-surface placeholder:text-outline-variant rounded-lg py-4 pl-12 pr-4 border-0 focus:ring-0 focus:bg-surface-container-lowest focus:shadow-[inset_0_0_0_1px_rgba(69,97,125,0.2)] transition-all outline-none" id="email" name="email" placeholder="student@dojo.com" type="email"/>
+</div>
+</div>
+<!-- Password Field -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center ml-1">
+<label class="font-label text-sm text-on-surface font-medium" for="password">Password</label>
+<a class="font-label text-xs text-primary hover:text-primary-dim transition-colors" href="#">Forgot Password?</a>
+</div>
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline-variant group-focus-within:text-primary transition-colors" data-icon="lock">lock</span>
+<input class="w-full bg-surface-container-high text-on-surface placeholder:text-outline-variant rounded-lg py-4 pl-12 pr-4 border-0 focus:ring-0 focus:bg-surface-container-lowest focus:shadow-[inset_0_0_0_1px_rgba(69,97,125,0.2)] transition-all outline-none" id="password" name="password" placeholder="••••••••" type="password"/>
+</div>
+</div>
+<!-- Primary Action -->
+<div class="mt-4">
+<button class="w-full bg-primary text-on-primary rounded-full py-4 font-headline font-semibold text-lg shadow-[0_20px_40px_rgba(45,52,53,0.06)] signature-gradient-hover transition-all duration-300 flex items-center justify-center gap-2" type="submit">
+                        Enter Dojo
+                        <span class="material-symbols-outlined text-xl" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Secondary Action -->
+<div class="text-center mt-6">
+<p class="font-body text-sm text-on-surface-variant">
+                Beginning your journey? 
+                <a class="font-headline font-semibold text-primary hover:text-primary-dim ml-1 transition-colors" href="#">Sign Up</a>
+</p>
+</div>
+</main>
+</body></html>
+
+<!-- Đăng ký tài khoản -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ZenPulse AI - Registration</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#5a6061",
+                        "on-surface": "#2d3435",
+                        "error-dim": "#4e0309",
+                        "inverse-surface": "#0c0f0f",
+                        "outline": "#757c7d",
+                        "surface-container": "#ebeeef",
+                        "primary": "#45617d",
+                        "secondary-fixed-dim": "#fbc8c8",
+                        "on-primary-fixed": "#25415c",
+                        "on-background": "#2d3435",
+                        "on-secondary-fixed-variant": "#785252",
+                        "secondary-dim": "#6e494a",
+                        "surface-dim": "#d4dbdd",
+                        "on-secondary-fixed": "#583637",
+                        "surface-tint": "#45617d",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#455a6d",
+                        "on-error-container": "#752121",
+                        "on-tertiary-fixed": "#293e50",
+                        "tertiary-fixed": "#c9dff7",
+                        "tertiary": "#4c6175",
+                        "outline-variant": "#adb3b4",
+                        "surface-bright": "#f9f9f9",
+                        "secondary": "#7c5556",
+                        "primary-fixed-dim": "#bbd7f8",
+                        "on-primary-container": "#385470",
+                        "on-primary": "#f5f8ff",
+                        "error": "#9f403d",
+                        "primary-dim": "#395571",
+                        "primary-container": "#cfe5ff",
+                        "on-secondary-container": "#6d4849",
+                        "tertiary-dim": "#405568",
+                        "inverse-on-surface": "#9c9d9d",
+                        "error-container": "#fe8983",
+                        "on-tertiary": "#f6f9ff",
+                        "tertiary-fixed-dim": "#bbd1e8",
+                        "inverse-primary": "#b8d4f6",
+                        "surface-container-low": "#f2f4f4",
+                        "surface": "#f9f9f9",
+                        "on-error": "#fff7f6",
+                        "tertiary-container": "#c9dff7",
+                        "background": "#f9f9f9",
+                        "secondary-container": "#ffdad9",
+                        "surface-variant": "#dde4e5",
+                        "surface-container-high": "#e4e9ea",
+                        "on-tertiary-container": "#3c5063",
+                        "on-secondary": "#fff7f6",
+                        "secondary-fixed": "#ffdad9",
+                        "on-primary-fixed-variant": "#425e7a",
+                        "primary-fixed": "#cfe5ff",
+                        "surface-container-highest": "#dde4e5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": [
+                            "Plus Jakarta Sans", "sans-serif"
+                        ],
+                        "display": [
+                            "Plus Jakarta Sans", "sans-serif"
+                        ],
+                        "body": [
+                            "Inter", "sans-serif"
+                        ],
+                        "label": [
+                            "Inter", "sans-serif"
+                        ]
+                    },
+                    "fontSize": {}
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased min-h-screen flex flex-col md:flex-row overflow-hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- Left Visual Pane: The Meditative Space -->
+<div class="hidden md:flex w-full md:w-5/12 lg:w-1/2 relative bg-surface-container flex-col justify-between p-12 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-80 mix-blend-multiply" data-alt="soft sunlight filtering through lush green bamboo forest canopy, creating dappled komorebi patterns on the ground, tranquil cinematic lighting, shallow depth of field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4Pn1pPiLTa1QfP5FSzBo8MPtFlCkhOPgLlxJnbN20d0Z9twXI3pm-GigMa-5xx8oD43WUAtLI51GpSPiMCtpd0nKnLGFxgfyoquswje1MycrIcVknj6Q3IJMVmxnIH7ihYYimyZbzGWzqoaeQhKJv0mDZvkez3npy6-Ts4tORkAQJESQ4tB7Hrmxx1mIqMSTm2q4L7oI8qnJ2a_ONXxDVTa6kLkhF_WVosJ-lC8RsjJUfTz8W4rxZfgElkHMdqQAkMEhhNKn7BIg"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container/90 via-surface-container/20 to-transparent z-10"></div>
+<div class="absolute inset-0 bg-primary/5 mix-blend-overlay z-10"></div>
+<div class="z-20 relative">
+<h1 class="font-headline text-2xl font-bold text-on-primary-fixed tracking-tight">ZenPulse AI</h1>
+</div>
+<div class="z-20 relative max-w-md">
+<p class="font-headline text-4xl text-on-primary-fixed font-light leading-tight mb-4">
+                Master Japanese with focused intent.
+            </p>
+<p class="font-body text-on-surface-variant text-base leading-relaxed">
+                Step into a quiet space designed for deep learning. Adaptive AI meets traditional serenity.
+            </p>
+</div>
+</div>
+<!-- Right Interaction Pane: The Canvas -->
+<div class="w-full md:w-7/12 lg:w-1/2 flex items-center justify-center p-6 md:p-12 lg:p-24 relative bg-surface">
+<!-- Ambient Background Depth -->
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary-fixed/20 rounded-full blur-[80px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
+<div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary-fixed/10 rounded-full blur-[100px] pointer-events-none translate-y-1/3 -translate-x-1/4"></div>
+<!-- The Floating Card -->
+<div class="w-full max-w-[440px] bg-surface-container-lowest rounded-xl p-8 md:p-10 shadow-[0_24px_60px_rgba(45,52,53,0.04)] relative z-10">
+<div class="mb-10 text-center md:text-left">
+<h2 class="font-headline text-3xl font-light text-on-surface mb-2">Begin Your Journey</h2>
+<p class="font-body text-sm text-on-surface-variant">Create your personalized dojo.</p>
+</div>
+<form action="#" class="space-y-6" method="POST">
+<!-- Input: Full Name -->
+<div class="flex flex-col gap-1.5">
+<label class="font-body text-sm font-medium text-on-surface-variant" for="name">Full Name</label>
+<input class="w-full rounded-lg bg-surface-container-high px-4 py-3.5 text-on-surface placeholder:text-outline-variant focus:bg-surface-container-lowest focus:outline-none focus:ring-1 focus:ring-primary/20 transition-colors border-none" id="name" name="name" placeholder="Enter your name" type="text"/>
+</div>
+<!-- Input: Email -->
+<div class="flex flex-col gap-1.5">
+<label class="font-body text-sm font-medium text-on-surface-variant" for="email">Email Address</label>
+<input class="w-full rounded-lg bg-surface-container-high px-4 py-3.5 text-on-surface placeholder:text-outline-variant focus:bg-surface-container-lowest focus:outline-none focus:ring-1 focus:ring-primary/20 transition-colors border-none" id="email" name="email" placeholder="you@example.com" type="email"/>
+</div>
+<!-- Input: Password -->
+<div class="flex flex-col gap-1.5">
+<label class="font-body text-sm font-medium text-on-surface-variant" for="password">Password</label>
+<div class="relative">
+<input class="w-full rounded-lg bg-surface-container-high px-4 py-3.5 pr-12 text-on-surface placeholder:text-outline-variant focus:bg-surface-container-lowest focus:outline-none focus:ring-1 focus:ring-primary/20 transition-colors border-none" id="password" name="password" placeholder="Min. 8 characters" type="password"/>
+<button class="absolute right-3 top-1/2 -translate-y-1/2 text-outline-variant hover:text-on-surface transition-colors p-1 flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-[20px]">visibility_off</span>
+</button>
+</div>
+</div>
+<!-- Selection Chips: Learning Goal -->
+<div class="flex flex-col gap-2.5 pt-2">
+<label class="font-body text-sm font-medium text-on-surface-variant">Current Goal</label>
+<div class="flex gap-3">
+<!-- Selected State -->
+<div class="flex-1 bg-primary-container text-on-primary-container rounded-lg py-3 px-2 text-center cursor-pointer transition-all border border-transparent">
+<span class="font-body text-sm font-medium">JLPT N5</span>
+</div>
+<!-- Unselected States -->
+<div class="flex-1 bg-surface-container-highest text-on-surface rounded-lg py-3 px-2 text-center cursor-pointer hover:bg-surface-variant transition-all border border-transparent">
+<span class="font-body text-sm font-medium">JLPT N4</span>
+</div>
+<div class="flex-1 bg-surface-container-highest text-on-surface rounded-lg py-3 px-2 text-center cursor-pointer hover:bg-surface-variant transition-all border border-transparent">
+<span class="font-body text-sm font-medium">JLPT N3+</span>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="pt-6">
+<button class="w-full rounded-full bg-primary text-on-primary py-4 font-body text-base font-medium hover:bg-gradient-to-br hover:from-primary hover:to-primary-container transition-all shadow-[0_8px_24px_rgba(45,52,53,0.06)] flex items-center justify-center gap-2" type="button">
+<span>Enter the Dojo</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</form>
+<div class="mt-8 text-center">
+<p class="font-body text-sm text-on-surface-variant">
+                    Already walking the path? 
+                    <a class="text-primary font-medium hover:text-primary-dim transition-colors ml-1" href="#">Sign in</a>
+</p>
+</div>
+</div>
+</div>
+</body></html>
