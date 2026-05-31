@@ -33,10 +33,13 @@ public class EntryRelation {
     @JoinColumn(name = "target_id", nullable = false)
     private DictionaryEntry target;
 
-    /** Relation type, e.g. "kanji_component", "synonym", "antonym". */
+    /**
+     * Relation type — one of: kanji, radical, compound, synonym, antonym.
+     * Stored as plain VARCHAR to avoid enum-mapping errors for future values.
+     * See {@link vn.hust.huy.backend.model.enums.RelationType} for known values.
+     */
     @Column(name = "relation_type", length = 50)
-    @Builder.Default
-    private String relationType = "kanji_component";
+    private String relationType;
 
     /** Position of the kanji within the word (1-based). */
     @Column(name = "order_index")

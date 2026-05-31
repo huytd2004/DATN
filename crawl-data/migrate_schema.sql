@@ -164,7 +164,7 @@ CREATE INDEX IF NOT EXISTS idx_flashcard_decks_user ON flashcard_decks(user_id);
 -- ---------------------------------------------------------------------------
 -- BƯỚC 8: Tạo bảng `flashcards` mới
 --   Schema cũ: (user_id, entry_id, source, status, repetitions, interval, ease_factor, next_review_at)
---   Schema mới: (deck_id, user_id, front_text, front_reading, back_text, back_notes, status)
+--   Schema mới: (deck_id, front_text, front_reading, back_text, back_notes, status)
 --
 --   ⚠️  Data cũ KHÔNG thể migrate tự động vì cấu trúc hoàn toàn khác.
 --   Các flashcard cũ sẽ bị xóa. Users cần tạo lại từ đầu.
@@ -176,7 +176,6 @@ DROP TABLE IF EXISTS flashcards CASCADE;
 CREATE TABLE flashcards (
     id              UUID            PRIMARY KEY DEFAULT gen_random_uuid(),
     deck_id         UUID            NOT NULL REFERENCES flashcard_decks(id) ON DELETE CASCADE,
-    user_id         UUID            NOT NULL REFERENCES users(id),
     front_text      TEXT            NOT NULL,
     front_reading   TEXT,
     back_text       TEXT            NOT NULL,
@@ -186,7 +185,6 @@ CREATE TABLE flashcards (
 );
 
 CREATE INDEX IF NOT EXISTS idx_flashcards_deck   ON flashcards(deck_id);
-CREATE INDEX IF NOT EXISTS idx_flashcards_user   ON flashcards(user_id);
 CREATE INDEX IF NOT EXISTS idx_flashcards_status ON flashcards(status);
 
 
@@ -229,6 +227,32 @@ CREATE TABLE IF NOT EXISTS learning_logs (
 );
 
 CREATE INDEX IF NOT EXISTS idx_learning_logs_session ON learning_logs(session_id);
+
+
+-- ---------------------------------------------------------------------------
+-- BƯỚC 12: Tạo bảng `tutor_session_results`
+-- ---------------------------------------------------------------------------
+CREATE TABLE IF NOT EXISTS tutor_session_results (
+    id              UUID        PRIMARY KEY DEFAULT gen_random_uuid(),
+    session_id      UUID        NOT NULL UNIQUE REFERENCES conversation_sessions(id) ON DELETE CASCADE,
+    user_id         UUID        NOT NULL REFERENCES users(id),
+    duration_minutes INT,
+    user_turns      INT,
+    assistant_turns INT,
+    overall_score   NUMERIC(5,2),
+    mistake_count   INT         NOT NULL DEFAULT 0,
+    correction_count INT        NOT NULL DEFAULT 0,
+    fluency_score   INT,
+    accuracy_score  INT,
+    pronunciation_score INT,
+    mistakes        JSONB,
+    new_vocabulary  JSONB,
+    summary         TEXT,
+    finished_at     TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_tutor_results_user ON tutor_session_results(user_id);
 
 
 -- ---------------------------------------------------------------------------

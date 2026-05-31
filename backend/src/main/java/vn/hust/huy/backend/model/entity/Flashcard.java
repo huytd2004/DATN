@@ -2,8 +2,7 @@ package vn.hust.huy.backend.model.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.hibernate.annotations.JdbcTypeCode;
-import org.hibernate.type.SqlTypes;
+import vn.hust.huy.backend.model.converter.FlashcardStatusConverter;
 import vn.hust.huy.backend.model.enums.FlashcardStatus;
 
 import java.time.Instant;
@@ -34,9 +33,8 @@ public class Flashcard {
     @JoinColumn(name = "deck_id", nullable = false)
     private FlashcardDeck deck;
 
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "user_id", nullable = false)
-    private User user;
+    @OneToOne(mappedBy = "flashcard", fetch = FetchType.LAZY)
+    private SrsDetail srsDetail;
 
     // ── Card content ───────────────────────────────────────────────────────────
 
@@ -53,12 +51,13 @@ public class Flashcard {
     private String backNotes;
 
     // ── Status ─────────────────────────────────────────────────────────────────
-
-    @Enumerated(EnumType.STRING)
-    @JdbcTypeCode(SqlTypes.NAMED_ENUM)
-    @Column(columnDefinition = "flashcard_status")
+    // @Convert maps NEW_CARD ↔ "new", LEARNING ↔ "learning", REVIEW ↔ "review".
+    // DB column is varchar(20) (not a PostgreSQL named enum) so Hibernate can
+    // bind the string value directly without any cast.
+    @Convert(converter = FlashcardStatusConverter.class)
+    @Column(name = "status", nullable = false)
     @Builder.Default
-    private FlashcardStatus status = FlashcardStatus.learning;
+    private FlashcardStatus status = FlashcardStatus.NEW_CARD;
 
     @Column(name = "created_at", nullable = false, updatable = false)
     @Builder.Default

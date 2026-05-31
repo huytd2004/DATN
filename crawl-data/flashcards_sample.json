@@ -1,0 +1,22 @@
+[
+  {
+    "deckName": "JLPT N3 - Core Verbs",
+    "description": "Core verbs for JLPT N3 practice",
+    "isPublic": false,
+    "cards": [
+      {"frontText": "準備", "frontReading": "じゅんび", "backText": "Chuẩn bị / preparation", "backNotes": "Ví dụ: 準備ができました。", "status": "review"},
+      {"frontText": "解決", "frontReading": "かいけつ", "backText": "Giải quyết / solution", "backNotes": "問題が解決した。", "status": "learning"},
+      {"frontText": "相談", "frontReading": "そうだん", "backText": "Thảo luận / consult", "backNotes": "彼に相談した。", "status": "new"}
+    ]
+  },
+  {
+    "deckName": "Kanji Essentials - 100",
+    "description": "High-frequency kanji with readings",
+    "isPublic": false,
+    "cards": [
+      {"frontText": "変化", "frontReading": "へんか", "backText": "Thay đổi / change", "backNotes": "天候の変化に注意。", "status": "review"},
+      {"frontText": "成功", "frontReading": "せいこう", "backText": "Thành công / success", "backNotes": "プロジェクトは成功した。", "status": "learning"},
+      {"frontText": "注意", "frontReading": "ちゅうい", "backText": "Chú ý / caution", "backNotes": "道路に注意してください。", "status": "new"}
+    ]
+  }
+]

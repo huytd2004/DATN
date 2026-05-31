@@ -26,6 +26,7 @@ public enum ErrorCode {
     // Flashcard
     FLASHCARD_ALREADY_EXISTS(409, "Từ này đã có trong bộ flashcard của bạn"),
     FLASHCARD_NOT_FOUND(404, "Không tìm thấy flashcard"),
+    INVALID_REVIEW_RATING(400, "Rating không hợp lệ. Dùng: again | hard | good | easy"),
 
     // Flashcard Deck
     DECK_NOT_FOUND(404, "Không tìm thấy bộ flashcard"),
@@ -34,6 +35,10 @@ public enum ErrorCode {
     // Comment
     COMMENT_NOT_FOUND(404, "Không tìm thấy bình luận"),
     COMMENT_ACCESS_DENIED(403, "Bạn không có quyền xóa bình luận này"),
+
+    // Translation
+    TRANSLATION_FAILED(502, "Dịch nhanh thất bại, vui lòng thử lại"),
+    DEEP_TRANSLATION_FAILED(502, "Phân tích chuyên sâu thất bại, vui lòng thử lại"),
 
     // Generic
     INTERNAL_SERVER_ERROR(500, "Lỗi hệ thống, vui lòng thử lại sau"),

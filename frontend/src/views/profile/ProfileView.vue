@@ -10,43 +10,7 @@ const handleLogout = () => {
 </script>
 
 <template>
-  <div class="bg-surface text-on-surface antialiased min-h-screen flex flex-col pt-16 pb-24 md:pb-0">
-    <!-- TopAppBar (Web & Mobile Header Shell) -->
-    <header class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-xl text-blue-800 dark:text-blue-300 font-['Plus_Jakarta_Sans'] tracking-tight border-b border-slate-100 dark:border-slate-800">
-      <div class="flex justify-between items-center px-6 h-16 w-full max-w-7xl mx-auto">
-        <div class="text-xl font-bold text-blue-900 dark:text-blue-100">
-          ZenPulse AI
-        </div>
-        <!-- Web Navigation Cluster (Hidden on Mobile) -->
-        <nav class="hidden md:flex space-x-8 items-center">
-          <a class="text-slate-500 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 transition-colors px-3 py-2 rounded-lg flex items-center gap-2" href="#">
-            <span class="material-symbols-outlined text-lg">menu_book</span>
-            <span class="font-medium text-sm">Learn</span>
-          </a>
-          <a class="text-slate-500 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 transition-colors px-3 py-2 rounded-lg flex items-center gap-2" href="#">
-            <span class="material-symbols-outlined text-lg">emoji_events</span>
-            <span class="font-medium text-sm">Goals</span>
-          </a>
-          <a class="text-slate-500 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 transition-colors px-3 py-2 rounded-lg flex items-center gap-2" href="#">
-            <span class="material-symbols-outlined text-lg">bar_chart</span>
-            <span class="font-medium text-sm">Progress</span>
-          </a>
-          <RouterLink to="/profile" class="text-blue-700 dark:text-blue-400 font-semibold hover:bg-slate-200/50 dark:hover:bg-slate-800/50 transition-colors px-3 py-2 rounded-lg flex items-center gap-2">
-            <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">person</span>
-            <span class="text-sm">Profile</span>
-          </RouterLink>
-        </nav>
-        <div class="flex items-center gap-4">
-          <button class="text-slate-500 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 transition-colors p-2 rounded-full">
-            <span class="material-symbols-outlined">settings</span>
-          </button>
-          <img alt="User profile photo" class="w-8 h-8 rounded-full object-cover ghost-border" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxkgVzkxE77et6XnzItlINforFfWaqdiwDEt56WEJhOy7bIV3_yrYc6BYKRxM8FJ8XKd212Xx7PhohgoZoo-IFjko_guF1CrlP4JfpedeXb7DwgOocjvpr25cX1a3V9hy3g2ATCvR2R9ioiQdtMO6T-EWcc9FCmfNheJFdBgYCzR2HbF8zHmtFX4UwSVDtQ7qpj29gDRJ9hv1Htg02NqFQqsDpAx6Gw1JRrFuuFtJ-cXvOVxqG3uM_TDek6BdUFawKVxkk6lkqmPs"/>
-        </div>
-      </div>
-    </header>
-
-    <!-- Main Content Canvas -->
-    <main class="flex-1 w-full max-w-7xl mx-auto px-6 py-12 md:py-24">
+  <div class="w-full max-w-screen-2xl pt-6">
       <!-- Profile Header Section (Asymmetric Layout) -->
       <section class="flex flex-col md:flex-row items-start md:items-center justify-between gap-12 mb-16">
         <div class="flex items-center gap-8">
@@ -280,7 +244,7 @@ const handleLogout = () => {
                 <span class="material-symbols-outlined">palette</span>
               </div>
               <div>
-                <h4 class="font-headline text-lg font-medium text-on-surface mb-1">Giao diện Dojo</h4>
+                <h4 class="font-headline text-lg font-medium text-on-surface mb-1">Giao diện học tập</h4>
                 <p class="text-sm text-on-surface-variant leading-relaxed">Điều chỉnh môi trường học tập trực quan.</p>
               </div>
             </div>
@@ -314,26 +278,5 @@ const handleLogout = () => {
           Đăng xuất
         </button>
       </div>
-    </main>
-
-    <!-- BottomNavBar (Mobile Only) -->
-    <nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-slate-50/90 dark:bg-slate-900/90 backdrop-blur-md rounded-t-3xl shadow-[0_-4px_20px_rgba(0,0,0,0.05)] z-50 text-[11px] font-medium font-['Plus_Jakarta_Sans'] text-blue-800 dark:text-blue-300">
-      <a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-5 py-2 hover:text-blue-700 dark:hover:text-blue-300" href="#">
-        <span class="material-symbols-outlined text-2xl mb-1">menu_book</span>
-        <span>Learn</span>
-      </a>
-      <a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-5 py-2 hover:text-blue-700 dark:hover:text-blue-300" href="#">
-        <span class="material-symbols-outlined text-2xl mb-1">emoji_events</span>
-        <span>Goals</span>
-      </a>
-      <a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-5 py-2 hover:text-blue-700 dark:hover:text-blue-300" href="#">
-        <span class="material-symbols-outlined text-2xl mb-1">bar_chart</span>
-        <span>Progress</span>
-      </a>
-      <RouterLink to="/profile" class="flex flex-col items-center justify-center bg-blue-100 dark:bg-blue-900/40 text-blue-900 dark:text-blue-100 rounded-2xl px-5 py-2 translate-y-[-2px] transition-transform">
-        <span class="material-symbols-outlined text-2xl mb-1" style="font-variation-settings: 'FILL' 1;">person</span>
-        <span>Profile</span>
-      </RouterLink>
-    </nav>
   </div>
 </template>

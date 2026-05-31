@@ -88,4 +88,39 @@
   .signature-gradient-hover:hover {
     background: linear-gradient(135deg, #45617d 0%, #cfe5ff 100%);
   }
+  .komorebi-gradient {
+    background: linear-gradient(135deg, #45617d 0%, #cfe5ff 100%);
+  }
+  .sakura-gradient {
+    background: linear-gradient(135deg, #45617d 0%, #cfe5ff 100%);
+  }
+  .komorebi-shadow {
+    box-shadow: 0 20px 40px rgba(45, 52, 53, 0.04);
+  }
+  .glass-morphism {
+    background: rgba(249, 249, 249, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  .kanji-display {
+    font-size: 8rem;
+    line-height: 1;
+  }
+  .stroke-grid {
+    background-image: 
+        linear-gradient(to right, rgba(173, 179, 180, 0.1) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(173, 179, 180, 0.1) 1px, transparent 1px);
+    background-size: 50% 50%;
+  }
+  .zen-gradient {
+    background: linear-gradient(135deg, #45617d 0%, #cfe5ff 100%);
+  }
+  .zen-glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+  }
+  .japanese-text {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: 0.05em;
+  }
 }

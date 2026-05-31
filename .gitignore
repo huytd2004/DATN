@@ -1,0 +1,136 @@
+# =============================================================
+# DATN - Japanese Learning Platform
+# .gitignore (root)
+# =============================================================
+
+# ─────────────────────────────────────────
+# Secrets & Environment Variables
+# ─────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.jks
+secrets/
+
+# ─────────────────────────────────────────
+# Python (AI Pipeline / Crawlers)
+# ─────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.venv/
+venv/
+env/
+.Python
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.log
+pip-log.txt
+pip-delete-this-directory.txt
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.spec
+
+# ─────────────────────────────────────────
+# Java / Spring Boot (Backend)
+# ─────────────────────────────────────────
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+replay_pid*
+log.txt
+startup_output.txt
+*.sql.bak
+
+# ─────────────────────────────────────────
+# Node.js / Vue / Vite (Frontend)
+# ─────────────────────────────────────────
+node_modules/
+dist/
+.vite/
+*.local
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+coverage/
+cypress/screenshots/
+cypress/videos/
+
+# ─────────────────────────────────────────
+# Neo4j
+# ─────────────────────────────────────────
+neo4j-data/
+
+# ─────────────────────────────────────────
+# Database Dumps / SQL Backups
+# ─────────────────────────────────────────
+*.sql
+*.dump
+*.bak
+datn_backup_*.sql
+
+# ─────────────────────────────────────────
+# Uploads / Media / User Files
+# ─────────────────────────────────────────
+uploads/
+*.mp3
+*.mp4
+*.wav
+*.ogg
+*.webm
+
+# ─────────────────────────────────────────
+# IDE / Editor
+# ─────────────────────────────────────────
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.project
+.classpath
+.settings/
+*.swp
+*.swo
+*~
+
+# ─────────────────────────────────────────
+# OS Generated
+# ─────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─────────────────────────────────────────
+# AI / Agent Tools
+# ─────────────────────────────────────────
+.agents/
+.codex/
+
+# ─────────────────────────────────────────
+# Misc Temp / Scratch Files
+# ─────────────────────────────────────────
+*.tmp
+*.temp
+=0.0.9
+"ubprocess*"
+stitch.html

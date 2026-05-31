@@ -145,7 +145,8 @@ public class AuthServiceImpl implements AuthService {
     // ── Helpers ────────────────────────────────────────────────────────────────
 
     private String createAndSaveRefreshToken(User user) {
-        refreshTokenRepository.deleteByUser(user);
+        // Chỉ xóa các token đã hết hạn, giữ lại token còn hợp lệ (multi-tab support)
+        refreshTokenRepository.deleteExpiredByUser(user, Instant.now());
 
         String tokenValue = jwtTokenProvider.generateRefreshTokenValue();
 

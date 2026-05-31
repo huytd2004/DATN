@@ -1,0 +1,10 @@
+          label          |                  id                  | front_text |  status  
+-------------------------+--------------------------------------+------------+----------
+ Flashcards (latest 10): | 4f20b410-3b7d-4dcf-b8f4-3f5baf8dc53a | 変化       | review
+ Flashcards (latest 10): | 957d9a49-1098-4ae5-977f-9c40afff7bf2 | 成功       | learning
+ Flashcards (latest 10): | 9a57cd01-45c4-4dd6-b4a0-2800f9228ab9 | 注意       | new
+ Flashcards (latest 10): | 0e563b62-f903-4a27-acc3-632f97114edc | 準備       | review
+ Flashcards (latest 10): | acde161b-e188-45a2-b149-84e554ba801a | 解決       | learning
+ Flashcards (latest 10): | bee3be31-c643-4aed-9237-b8fb036b9329 | 相談       | new
+(6 rows)
+

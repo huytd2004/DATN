@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import vn.hust.huy.backend.dto.request.FlashcardDeckRequest;
 import vn.hust.huy.backend.dto.response.ApiResponse;
 import vn.hust.huy.backend.dto.response.FlashcardDeckResponse;
+import vn.hust.huy.backend.dto.response.FlashcardResponse;
 import vn.hust.huy.backend.service.FlashcardDeckService;
 
 import java.util.List;
@@ -18,6 +19,7 @@ import java.util.UUID;
  *
  * <ul>
  *   <li>GET    /api/v1/decks           – danh sách bộ thẻ của user hiện tại</li>
+ *   <li>GET    /api/v1/decks/{id}      – chi tiết 1 bộ thẻ (với card stats)</li>
  *   <li>POST   /api/v1/decks           – tạo bộ thẻ mới</li>
  *   <li>PUT    /api/v1/decks/{id}      – cập nhật bộ thẻ</li>
  *   <li>DELETE /api/v1/decks/{id}      – xóa bộ thẻ (cascade flashcards)</li>
@@ -37,6 +39,23 @@ public class FlashcardDeckController {
     @GetMapping
     public ResponseEntity<ApiResponse<List<FlashcardDeckResponse>>> getMyDecks() {
         return ResponseEntity.ok(flashcardDeckService.getMyDecks());
+    }
+
+    // ── GET /api/v1/decks/{id} ────────────────────────────────────────────────
+
+    @GetMapping("/{id}")
+    public ResponseEntity<ApiResponse<FlashcardDeckResponse>> getById(@PathVariable UUID id) {
+        return ResponseEntity.ok(flashcardDeckService.getById(id));
+    }
+
+    // ── GET /api/v1/decks/{id}/due ────────────────────────────────────────────
+
+    @GetMapping("/{id}/due")
+    public ResponseEntity<ApiResponse<List<FlashcardResponse>>> getDueCards(
+            @PathVariable UUID id,
+            @RequestParam(value = "maxNew", defaultValue = "20") int maxNew) {
+
+        return ResponseEntity.ok(flashcardDeckService.getDueCards(id, maxNew));
     }
 
     // ── POST /api/v1/decks ─────────────────────────────────────────────────────

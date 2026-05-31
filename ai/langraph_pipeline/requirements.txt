@@ -1,0 +1,9 @@
+neo4j>=5.9.0
+openai>=1.0.0
+python-dotenv>=1.0.0
+requests>=2.28.0
+google-genai>=2.3.0
+fastapi>=0.95.0
+uvicorn>=0.22.0
+python-multipart>=0.0.9
+faster-whisper>=1.0.0
