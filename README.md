@@ -77,6 +77,3 @@ Frontend mặc định chạy trên `http://localhost:5173` (Vite) — cấu hì
 **License & Contact**
 - Kiểm tra file license trong repo (nếu có). Liên hệ tác giả hoặc nhóm dự án trong thông tin repository.
 
----
-
-Nếu bạn muốn, tôi có thể mở rộng phần "Cấu hình môi trường" chi tiết hơn cho từng thành phần, hoặc thêm hướng dẫn chạy demo end-to-end.
